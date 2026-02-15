@@ -40,7 +40,7 @@ export default function ServicesPage() {
           <div className="relative w-full h-[260px] md:h-[340px] rounded-xl overflow-hidden bg-gray-200">
             {/* Replace src later */}
             <Image
-              src="/images/services/re-painting.webp"
+              src="/images/services/re-painting2.webp"
               alt="Painting Services"
               fill
               className="object-cover"
