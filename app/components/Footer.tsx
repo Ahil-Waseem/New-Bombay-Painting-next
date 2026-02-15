@@ -13,6 +13,9 @@ const servicesList = [
   { name: "Wallpaper Installation", link: "/services/wallpaper-installation" },
   { name: "POP False Ceiling", link: "/services/pop-false-ceiling" },
   { name: "Home Renovation", link: "/services/home-renovation" },
+  { name: "Wood Polish", link: "/services/wood-polish"},
+  { name: "Wood Polish Lamination", link: "/services/wood-polish-lamination"},
+
 ];
 
 export default function Footer() {
