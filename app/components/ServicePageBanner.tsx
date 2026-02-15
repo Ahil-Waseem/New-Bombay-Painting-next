@@ -13,7 +13,7 @@ interface PageBannerProps {
     href: string;
   };
   bgImage: string;
-  sideImage: string;
+  sideImage?: string;
   sideVideo?: string;
 }
 

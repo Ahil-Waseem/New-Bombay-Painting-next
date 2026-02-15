@@ -1,6 +1,6 @@
 import React from 'react'
 
-function page() {
+export default function PrivacyPolicyPage() {
   return (
     <>
           <section className="bg-black text-white py-16 px-6 sm:px-12 lg:px-24 leading-relaxed">
@@ -162,4 +162,4 @@ function page() {
   )
 }
 
-export default page
+
