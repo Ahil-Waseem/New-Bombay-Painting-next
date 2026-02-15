@@ -1,3 +1,5 @@
+import ServicePageBanner from "@/app/components/ServicePageBanner";
+
 export const metadata = {
   title: "Wood Polish & Lamination Services | New Bombay Painting",
   description:
@@ -6,6 +8,23 @@ export const metadata = {
 
 export default function WoodPolishLaminationPage() {
   return (
+    <>
+     <ServicePageBanner
+                        title="Professional Painting Services"
+                        description="High-quality interior and exterior painting solutions tailored for your space."
+                        primaryCta={{
+                          text: "Book Site Visit",
+                          href: "#contact",
+                        }}
+                        secondaryCta={{
+                          text: "View Services",
+                          href: "/services",
+                        }}
+                        bgImage="/images/services/service2.webp"
+                        // sideImage="/images/services/"
+                        sideVideo="/images/services/house-dancing1.mp4"
+                      />
+
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
       <div className="text-center max-w-2xl">
         <h1 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-6">
@@ -25,5 +44,6 @@ export default function WoodPolishLaminationPage() {
         </div>
       </div>
     </main>
+    </>
   );
 }

@@ -49,6 +49,14 @@ const navLinks = [
         name: "Home Renovation",
         path: "/services/home-renovation",
       },
+      {
+        name: "Wood Polish",
+        path: "/services/wood-polish",
+      },{
+        name: "Wood Polish Lamination",
+        path: "/services/wood-polish-lamination",
+      },
+
     ],
   },
   { name: "Projects", path: "/projects" },
