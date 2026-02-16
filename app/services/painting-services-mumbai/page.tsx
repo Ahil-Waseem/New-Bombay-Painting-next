@@ -1,9 +1,107 @@
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
 
+export const metadata = {
+  title:
+    "Professional Painting Services in Mumbai | House Painters Near You",
+  description:
+    "Looking for professional painting services in Mumbai? New Bombay Painting offers interior, exterior, texture, waterproofing and complete house painting solutions with premium finish and transparent pricing.",
+  keywords: [
+    "Painting services Mumbai",
+    "House painters Mumbai",
+    "Professional painters near me",
+    "Interior exterior painting Mumbai",
+    "Wall painting contractor Mumbai",
+    "Home painting services Mumbai",
+    "Flat painting cost Mumbai",
+    "Best painters in Mumbai"
+  ],
+  alternates: {
+    canonical:
+      "https://newbombaypainting.in/services/painting-services-mumbai",
+  },
+  openGraph: {
+    title:
+      "Professional Painting Services in Mumbai | New Bombay Painting",
+    description:
+      "Expert house painters in Mumbai offering interior, exterior and complete painting solutions with premium finish.",
+    url: "https://newbombaypainting.in/services/painting-services-mumbai",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
+
 function page() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/painting-services-mumbai#service",
+        serviceType: "Professional Painting Services",
+        name: "Painting Services in Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        description:
+          "Complete professional painting services including interior, exterior, texture finishes, waterproofing and wall repairs."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What type of paint is best for Mumbai homes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Water-based emulsion paints are ideal for Mumbai homes due to durability, stain resistance and ease of maintenance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a professional paint job last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "A professional paint job using premium materials can last between 5 to 10 years depending on maintenance and exposure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide warranty on painting services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes, warranty and service assurance are provided based on paint brand and scope of work."
+            }
+          }
+        ]
+      }
+    ]),
+  }}
+/>
+
         <ServicePageBanner
                     title="Professional Painting Services"
                     description="High-quality interior and exterior painting solutions tailored for your space."
@@ -32,44 +130,86 @@ Professional Painting Services in Mumbai      </h1>
 
     
 
-     <div className="space-y-6">
-      <h2 className="text-2xl font-semibold text-yellow-400">
-        Trusted House Painting Experts – New Bombay Painting
-      </h2>
+  <div className="space-y-6">
+  <h2 className="text-2xl font-semibold text-yellow-400">
+    Trusted House Painting Experts – New Bombay Painting
+  </h2>
 
-      <p className="leading-relaxed">
+  <p className="leading-relaxed">
 
-Your home is more than just four walls. It reflects your lifestyle, personality, and the energy you carry every day. A well-painted home does not just look beautiful—it feels fresh, inviting, and uplifting. At New Bombay Painting, we provide professional painting services in Mumbai designed to transform your residential or commercial space with precision, durability, and premium finish.
+Your home is more than just four walls. It reflects your lifestyle, personality, and the energy you carry every day. A well-painted home does not just look beautiful—it feels fresh, inviting, and uplifting. At{" "}
+<a
+  href="https://newbombaypainting.in/"
+  className="text-yellow-400 underline"
+>
+  New Bombay Painting
+</a>
+, we provide professional painting services in Mumbai designed to transform your residential or commercial space with precision, durability, and premium finish.
 
-Whether you are planning a complete home makeover or simply refreshing your interiors, our experienced painters ensure a smooth, hassle-free and high-quality painting experience from start to finish.
-      </p>
-    
-    </div>
+Whether you are planning a complete home makeover or simply refreshing your{" "}
+<a
+  href="/services/interior-painting"
+  className="text-yellow-400 underline"
+>
+  interiors
+</a>
+, our experienced painters ensure a smooth, hassle-free and high-quality painting experience from start to finish.
+  </p>
 
-     <div className="space-y-6">
-      <h2 className="text-2xl font-semibold text-yellow-400">
-        Complete Painting Solutions Under One Roof
-      </h2>
+</div>
 
-      <p className="leading-relaxed">
 
-At New Bombay Painting, we believe that painting is not just about colour application. It is a systematic process that involves inspection, preparation, execution and finishing. Our team handles everything professionally so you can relax while we upgrade your space.
+    <div className="space-y-6">
+  <h2 className="text-2xl font-semibold text-yellow-400">
+    Complete Painting Solutions Under One Roof
+  </h2>
 
-      </p>
-      <p className='leading-relaxed'>Our painting services in Mumbai include:</p>
-      <ul>
-        <li>Interior Painting</li>
-        <li>Exterior Painting</li>
+  <p className="leading-relaxed">
 
-        <li>Texture & Designer Wall Finishes</li>
+At{" "}
+<a
+  href="/services/painting-services-mumbai"
+  className="text-yellow-400 underline"
+>
+  New Bombay Painting
+</a>
+, we believe that painting is not just about colour application. It is a systematic process that involves inspection, preparation, execution and finishing. Our team handles everything professionally so you can relax while we upgrade your space.
 
-        <li>Waterproofing & Damp Protection</li>
-        <li>Wood Coating & Polish</li>
-        <li>Metal Painting</li>
-<li>Minor Wall Repairs & Crack Filling</li>
-      </ul>
-    <p className='leading-relaxed'>Every project is handled with attention to detail, proper surface preparation and premium materials to ensure long-lasting results.</p>
-    </div>
+  </p>
+
+  <p className='leading-relaxed'>Our painting services in Mumbai include:</p>
+
+  <ul>
+    <li>Interior Painting</li>
+    <li>
+      <a
+        href="/services/exterior-painting"
+        className="text-yellow-400 underline"
+      >
+        Exterior Painting
+      </a>
+    </li>
+
+    <li>Texture & Designer Wall Finishes</li>
+
+    <li>Waterproofing & Damp Protection</li>
+    <li>Wood Coating & Polish</li>
+    <li>Metal Painting</li>
+    <li>Minor Wall Repairs & Crack Filling</li>
+  </ul>
+
+  <p className='leading-relaxed'>
+    Every project is handled with attention to detail, proper surface preparation and premium materials to ensure long-lasting results. If you are planning a home upgrade in hill-station areas like Lonavala, you can also explore our{" "}
+    <a
+      href="/blog/lonavala-travel-guide-2025"
+      className="text-yellow-400 underline"
+    >
+      Lonavala Travel Guide 2025
+    </a>{" "}
+    to understand the region’s climate and surroundings before scheduling your painting work.
+  </p>
+</div>
+
 
      <div className="space-y-6">
       <h2 className="text-2xl font-semibold text-yellow-400">

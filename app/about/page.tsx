@@ -1,11 +1,87 @@
 export const metadata = {
-  title: "About Us | New Bombay Painting – 30+ Years of Excellence",
+  title: "About New Bombay Painting | 30+ Years Painting Experts in Mumbai",
   description:
-    "Learn about New Bombay Painting – trusted painting, interiors, texture, polish and finishing experts serving Mumbai and beyond for over 30 years.",
+    "New Bombay Painting is a trusted painting contractor in Mumbai with 30+ years of expertise in interior painting, exterior painting, texture finishes, polish work and luxury residential projects across Mumbai, Lonavala, Pune and beyond.",
+  keywords: [
+    "About New Bombay Painting",
+    "Painting contractor in Mumbai",
+    "30 years painting experience",
+    "Interior painting Mumbai",
+    "Exterior painting Mumbai",
+    "Texture painting experts",
+    "Luxury bungalow painting",
+    "Jewellery showroom painting",
+    "Painting services in Pune",
+    "Painting contractor Lonavala"
+  ],
+  alternates: {
+    canonical: "https://newbombaypainting.in/about",
+  },
+  openGraph: {
+    title: "About New Bombay Painting | 30+ Years Painting Experts",
+    description:
+      "Trusted painting, interiors and finishing experts serving Mumbai, Lonavala, Pune and beyond for over 30 years.",
+    url: "https://newbombaypainting.in/about",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
 };
+
 
 export default function AboutPage() {
   return (
+    <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://newbombaypainting.in/#organization",
+      name: "New Bombay Painting",
+      url: "https://newbombaypainting.in/",
+      email: "newbombaypainting302@gmail.com",
+      telephone: [
+        "+919793167187",
+        "+919819584682",
+        "+919320837842",
+        "+918736963061"
+      ],
+      founder: {
+        "@type": "Person",
+        name: "Waseem Khan",
+        jobTitle: "Proprietor"
+      },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "D-231, Y.Rao Chavan NGR, Ekata Nagar, Link Road, Govandi, Mankhurd",
+        addressLocality: "Mumbai",
+        addressRegion: "MH",
+        postalCode: "400043",
+        addressCountry: "IN"
+      },
+      areaServed: [
+        { "@type": "City", "name": "Mumbai" },
+        { "@type": "City", "name": "Navi Mumbai" },
+        { "@type": "City", "name": "Pune" },
+        { "@type": "City", "name": "Lonavala" },
+        { "@type": "City", "name": "Khandala" },
+        { "@type": "City", "name": "Jamshedpur" },
+        { "@type": "City", "name": "Nashik" },
+        { "@type": "City", "name": "Hyderabad" }
+      ],
+      description:
+        "New Bombay Painting is a professional painting contractor with over 30 years of experience delivering interior, exterior, texture and polish services for luxury homes, jewellery showrooms and private residences.",
+      numberOfEmployees: "300+",
+      foundingDate: "1995",
+      sameAs: [
+        "https://newbombaypainting.in/"
+      ]
+    }),
+  }}
+/>
+
     <main className="bg-black text-white">
 
       {/* ================= HERO / VIDEO BANNER ================= */}
@@ -124,6 +200,7 @@ export default function AboutPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
 
@@ -135,5 +212,6 @@ function Stat({ number, label }: { number: string; label: string }) {
       <div className="text-3xl font-bold text-white">{number}</div>
       <div className="text-sm text-gray-400">{label}</div>
     </div>
+    
   );
 }

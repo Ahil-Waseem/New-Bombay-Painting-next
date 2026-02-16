@@ -2,6 +2,36 @@ import AutoScrollGallerySadeCard from '@/app/components/AutoScrollGallerySadeCar
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
 
+export const metadata = {
+  title:
+    "Home Renovation Services in Mumbai | Complete House Renovation Experts",
+  description:
+    "Professional home renovation services in Mumbai, Navi Mumbai & Thane. Interior remodeling, false ceiling, waterproofing, structural repair and complete house renovation with transparent pricing and expert workmanship.",
+  keywords: [
+    "Home renovation Mumbai",
+    "House renovation services Mumbai",
+    "Flat renovation Mumbai",
+    "Interior remodeling Mumbai",
+    "False ceiling renovation",
+    "Complete home renovation contractor",
+    "Renovation cost per sq ft Mumbai",
+    "Home renovation Navi Mumbai"
+  ],
+  alternates: {
+    canonical:
+      "https://newbombaypainting.in/services/home-renovation",
+  },
+  openGraph: {
+    title:
+      "Home Renovation Services in Mumbai | New Bombay Painting",
+    description:
+      "End-to-end home renovation including painting, false ceiling, waterproofing, structural upgrades and interior modernization.",
+    url: "https://newbombaypainting.in/services/home-renovation",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
+
 function page() {
    const galleryData = [
     {
@@ -22,6 +52,73 @@ function page() {
   ];
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/home-renovation#service",
+        serviceType: "Home Renovation Services",
+        name: "Home Renovation Services in Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" }
+        ],
+        description:
+          "Complete home renovation services including structural upgrades, false ceiling, painting, waterproofing, flooring and interior modernization."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does home renovation take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Renovation timelines depend on the size of the property and scope of work. Minor upgrades may take a few days, while complete home renovation projects can take several weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cost of home renovation in Mumbai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Renovation costs vary based on materials, labour, structural modifications and finishing details. A clear quotation is provided after site inspection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you handle complete renovation including painting and ceiling work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes, we provide complete renovation services including painting, POP false ceiling, waterproofing, wall repairs and finishing work."
+            }
+          }
+        ]
+      }
+    ]),
+  }}
+/>
+
       <ServicePageBanner
                           title="Professional Painting Services"
                           description="High-quality interior and exterior painting solutions tailored for your space."
@@ -45,26 +142,43 @@ function page() {
 
         {/* PAGE TITLE */}
         <div className="space-y-6">
-          <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-            Home Renovation Services in Mumbai
-          </h1>
-          <p className="text-lg leading-relaxed">Home renovation refers to the process of upgrading and improving the existing structure of your house to enhance its appearance, boost functionality, or fix structural issues. It may involve small updates such as repainting walls and installing wallpaper, or larger modifications like redesigning the kitchen, upgrading bathrooms, or even constructing additional rooms.</p>
+  <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
+    Home Renovation Services in Mumbai
+  </h1>
 
-          <p className="text-lg leading-relaxed">
-            Your home deserves more than just maintenance — it deserves transformation.
-            At New Bombay Painting, we provide complete home renovation services in Mumbai,
-            Navi Mumbai, Thane and nearby areas. From structural upgrades and modern interiors
-            to repainting, false ceiling, waterproofing and finishing touches, we handle
-            everything with precision and professional expertise.
-          </p>
+  <p className="text-lg leading-relaxed">
+    Home renovation refers to the process of upgrading and improving the existing structure of your house to enhance its appearance, boost functionality, or fix structural issues. It may involve small updates such as repainting walls and installing wallpaper, or larger modifications like redesigning the kitchen, upgrading bathrooms, or even constructing additional rooms.
+  </p>
 
-          <p className="text-lg leading-relaxed">
-            Whether you are renovating a flat, bungalow, office or commercial space,
-            our team ensures high-quality workmanship, timely completion and complete
-            transparency in pricing. We convert outdated spaces into modern,
-            functional and aesthetically appealing homes.
-          </p>
-        </div>
+  <p className="text-lg leading-relaxed">
+    Your home deserves more than just maintenance — it deserves transformation.
+    At{" "}
+    <a
+      href="https://newbombaypainting.in/"
+      className="text-yellow-400 underline"
+    >
+      New Bombay Painting
+    </a>
+    , we provide complete home renovation services in Mumbai,
+    Navi Mumbai, Thane and nearby areas. From structural upgrades and modern interiors
+    to repainting, false ceiling, waterproofing and finishing touches, we handle
+    everything with precision and professional expertise, including professional{" "}
+    <a
+      href="/services/interior-painting"
+      className="text-yellow-400 underline"
+    >
+      interior painting services
+    </a>.
+  </p>
+
+  <p className="text-lg leading-relaxed">
+    Whether you are renovating a flat, bungalow, office or commercial space,
+    our team ensures high-quality workmanship, timely completion and complete
+    transparency in pricing. We convert outdated spaces into modern,
+    functional and aesthetically appealing homes.
+  </p>
+</div>
+
 
         {/* OUR RENOVATION SERVICES */}
         <div className="space-y-6">
@@ -106,22 +220,35 @@ function page() {
         </div>
 
         {/* STRUCTURAL & PROTECTION WORK */}
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400">
-            Structural Repairs & Waterproofing
-          </h2>
+       <div className="space-y-6">
+  <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400">
+    Structural Repairs & Waterproofing
+  </h2>
 
-          <p className="leading-relaxed">
-            Renovation is incomplete without proper structural care. Our team handles
-            crack repairs, damp treatment, terrace waterproofing and anti-leak solutions
-            to strengthen your property before final finishing work begins.
-          </p>
+  <p className="leading-relaxed">
+    Renovation is incomplete without proper structural care. Our team handles
+    crack repairs, damp treatment, terrace{" "}
+    <a
+      href="/services/pop-false-ceiling"
+      className="text-yellow-400 underline"
+    >
+      waterproofing
+    </a>{" "}
+    and anti-leak solutions to strengthen your property before final finishing work begins.
+  </p>
 
-          <p className="leading-relaxed">
-            We use high-quality materials and proven techniques to ensure long-lasting
-            protection against moisture, seepage and environmental damage.
-          </p>
-        </div>
+  <p className="leading-relaxed">
+    We use high-quality materials and proven techniques to ensure long-lasting
+    protection against moisture, seepage and environmental damage through professional{" "}
+    <a
+      href="/services/exterior-painting"
+      className="text-yellow-400 underline"
+    >
+      exterior painting services
+    </a>.
+  </p>
+</div>
+
 
           <div className="space-y-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400">

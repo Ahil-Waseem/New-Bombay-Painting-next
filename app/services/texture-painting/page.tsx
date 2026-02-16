@@ -1,9 +1,97 @@
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
+import Script from "next/script";
+
+export const metadata = {
+  title: "Texture Painting Services in Mumbai | Wall Texture Designs | New Bombay Painting",
+  description:
+    "Professional texture painting services in Mumbai. Explore modern wall texture designs including marble, metallic, geometric & 3D finishes. Expert application by New Bombay Painting.",
+  keywords: [
+    "texture painting services in Mumbai",
+    "wall texture design",
+    "marble texture paint",
+    "3D wall texture design",
+    "metallic wall texture",
+    "living room wall texture",
+    "bedroom texture paint",
+    "modern texture paint designs",
+    "texture painting contractor Mumbai",
+  ],
+};
 
 function page() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/pop-false-ceiling#service",
+        serviceType: "POP & False Ceiling Installation",
+        name: "False Ceiling Services in Mumbai",
+        url: "https://newbombaypainting.in/services/pop-false-ceiling",
+        provider: {
+          "@type": "LocalBusiness",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" }
+        ],
+        description:
+          "Professional false ceiling installation including gypsum, POP, PVC and modern lighting integration for residential and commercial properties."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a 100 sqft false ceiling cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "False ceiling cost ranges between ₹5,000 to ₹10,000 depending on material, lighting and design complexity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is better, PVC or POP ceiling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "PVC ceilings are moisture-resistant while POP offers greater design flexibility and customization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the life of a false ceiling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "A professionally installed false ceiling can last between 15 to 20 years with proper maintenance."
+            }
+          }
+        ]
+      }
+    ])
+  }}
+/>
+
+    
          <ServicePageBanner
                     title="Professional Painting Services"
                     description="High-quality interior and exterior painting solutions tailored for your space."
@@ -25,11 +113,32 @@ function page() {
 
     {/* MAIN HEADING */}
     <div className="space-y-6">
-      <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-Types Of Wall Texture Finishes – Updated Guide by New Bombay Painting      </h1>
-      <p className="text-gray-200 leading-relaxed">
-       Choosing the right wall painting can drastically change the appearance and ambience of a room. At New Bombay Painting, we help homeowners select premium texture wall designs that transform ordinary walls into stylish statement surfaces. Let's take a look at some popular options for texture wall designs:
-      </p>
+     <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
+Types Of Wall Texture Finishes – Updated Guide by New Bombay Painting
+</h1>
+
+<p className="text-gray-200 leading-relaxed">
+Choosing the right wall painting can drastically change the appearance and ambience of a room. At{" "} 
+<a 
+  href="https://newbombaypainting.in/" 
+  className="text-yellow-400 underline"
+>
+  New Bombay Painting
+</a>,{" "} 
+we help homeowners select premium texture wall designs that transform ordinary walls into stylish statement surfaces. 
+
+If you're planning a home makeover in scenic destinations like Lonavala, you can also explore our{" "} 
+<a 
+  href="/blog/lonavala-travel-guide-2025" 
+  className="text-yellow-400 underline"
+>
+  Lonavala Travel Guide 2025
+</a> 
+{" "}to understand why many homeowners invest in stylish wall finishes for their holiday homes and villas. 
+
+Let's take a look at some popular options for texture wall designs:
+</p>
+
     </div>
 
     {/* WHY EXTERIOR PAINTING */}
@@ -166,30 +275,45 @@ Interior Wall Texture And Colour      </h2>
 
     <div className="space-y-6">
 
-      <details className="border border-gray-700 rounded-lg p-5">
-        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
-          Which texture is best for walls?
-        </summary>
-        <p className="mt-4 text-gray-200 leading-relaxed">
-          The best texture wall designs depends on the desired style and functionality.
-          For a modern look, smooth textures like marble texture paint or textured wall paint
-          are popular choices. If you want a more rustic or artistic feel, you can opt for
-          spiky textured finishes or stucco for added depth and style. It also depends on the
-          room's purpose—e.g., bedroom wall texture designs tend to be subtle and calming,
-          while hall wall texture designs can be more dramatic and bold.
-        </p>
-      </details>
+   <details className="border border-gray-700 rounded-lg p-5">
+  <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+    Which texture is best for walls?
+  </summary>
+  <p className="mt-4 text-gray-200 leading-relaxed">
+    The best texture wall designs depends on the desired style and functionality.
+    For a modern look, smooth textures like marble texture paint or textured wall paint
+    are popular choices. If you want a more rustic or artistic feel, you can opt for
+    spiky textured finishes or stucco for added depth and style. It also depends on the
+    room's purpose—e.g., bedroom wall texture designs tend to be subtle and calming,
+    especially when combined with professional{" "}
+    <a
+      href="/services/interior-painting"
+      className="text-yellow-400 underline"
+    >
+      interior painting services
+    </a>.
+  </p>
+</details>
 
-      <details className="border border-gray-700 rounded-lg p-5">
-        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
-          What is the most popular wall texture?
-        </summary>
-        <p className="mt-4 text-gray-200 leading-relaxed">
-          Modern smooth finishes, marble texture paint, and 3D wall texture design
-          are among the most popular wall texture designs in current interior trends.
-          These finishes provide elegance, depth and long-lasting appeal.
-        </p>
-      </details>
+<details className="border border-gray-700 rounded-lg p-5">
+  <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+    What is the most popular wall texture?
+  </summary>
+  <p className="mt-4 text-gray-200 leading-relaxed">
+    Modern smooth finishes, marble texture paint, and 3D wall texture design
+    are among the most popular wall texture designs in current interior trends.
+    These finishes provide elegance, depth and long-lasting appeal, and are often
+    complemented by high-quality{" "}
+    <a
+      href="/services/exterior-painting"
+      className="text-yellow-400 underline"
+    >
+      exterior painting services
+    </a>
+    {" "}for complete home transformation.
+  </p>
+</details>
+
 
       <details className="border border-gray-700 rounded-lg p-5">
         <summary className="cursor-pointer text-yellow-400 font-medium text-lg">

@@ -3,10 +3,35 @@ import ResponsiveImageSection from "@/app/components/ResponsiveImageSection";
 import ServicePageBanner from "@/app/components/ServicePageBanner";
 
 export const metadata = {
-  title: "Painter Near Me in Navi Mumbai | New Bombay Painting",
+  title:
+    "Painter Near Me in Navi Mumbai | House Painting Services in Navi Mumbai",
   description:
-    "Looking for professional painters in Mumbai? New Bombay Painting offers expert interior, exterior and home renovation services with premium quality and on-time delivery.",
+    "Looking for a reliable painter near you in Navi Mumbai? New Bombay Painting provides expert interior painting, exterior painting, texture finishes, waterproofing and home renovation services with premium materials and timely completion.",
+  keywords: [
+    "Painter near me in Navi Mumbai",
+    "House painters Navi Mumbai",
+    "Interior painting Navi Mumbai",
+    "Exterior painting Navi Mumbai",
+    "Wall painting services Navi Mumbai",
+    "Home painting contractor Navi Mumbai",
+    "Texture painting Navi Mumbai",
+    "1BHK painting Navi Mumbai",
+    "2BHK painting Navi Mumbai"
+  ],
+  alternates: {
+    canonical: "https://newbombaypainting.in/painter-near-me/navi-mumbai",
+  },
+  openGraph: {
+    title:
+      "Painter Near Me in Navi Mumbai | Professional Painting Services",
+    description:
+      "Trusted painting contractors in Navi Mumbai for interior, exterior and renovation projects with premium finish and skilled workmanship.",
+    url: "https://newbombaypainting.in/painter-near-me/navi-mumbai",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
 };
+
 export const bedroomData = [
   {
     id: 1,
@@ -50,6 +75,47 @@ export const bedroomData = [
 export default function PainterNearMeNaviMumbai() {
   return (
         <>
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id":
+        "https://newbombaypainting.in/painter-near-me/navi-mumbai#service",
+      serviceType: "House Painting Services",
+      name: "Painter Near Me in Navi Mumbai",
+      provider: {
+        "@type": "PaintingContractor",
+        name: "New Bombay Painting",
+        url: "https://newbombaypainting.in/",
+        telephone: [
+          "+919793167187",
+          "+919819584682",
+          "+919320837842",
+          "+918736963061"
+        ],
+        email: "newbombaypainting302@gmail.com",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress:
+            "D-231, Y.Rao Chavan NGR, Ekata Nagar, Link Road, Govandi, Mankhurd",
+          addressLocality: "Mumbai",
+          addressRegion: "MH",
+          postalCode: "400043",
+          addressCountry: "IN"
+        }
+      },
+      areaServed: {
+        "@type": "City",
+        name: "Navi Mumbai"
+      },
+      description:
+        "Professional painter near you in Navi Mumbai offering interior painting, exterior painting, texture finishes, waterproofing and home renovation services with premium materials and skilled workforce."
+    }),
+  }}
+/>
+
     <ServicePageBanner
             title="Professional Painting Services"
             description="High-quality interior and exterior painting solutions tailored for your space."
@@ -101,8 +167,42 @@ export default function PainterNearMeNaviMumbai() {
           cost-effective and high-quality solutions.
         </p>
       </div>
+      <div className="space-y-6 text-gray-300 leading-relaxed">
+
+  <h2 className="text-2xl font-semibold text-yellow-400">
+    Why Choose Our Painting Services in Navi Mumbai?
+  </h2>
+
+  <p>
+    New Bombay Painting brings over 30 years of experience in delivering
+    professional painting services across Navi Mumbai. Our team understands
+    the unique residential layouts, high-rise apartments and independent
+    homes commonly found in areas such as Vashi, Nerul, Kharghar,
+    Panvel and Belapur. This allows us to provide tailored solutions
+    based on surface condition, climate exposure and property type.
+  </p>
+
+  <p>
+    We follow a systematic painting process that includes detailed site
+    inspection, surface preparation, crack filling, sanding, priming and
+    multiple coats of premium quality paint for a smooth and durable finish.
+    Furniture protection, floor covering and proper cleanup are handled
+    carefully to ensure minimal disruption to your daily routine.
+  </p>
+
+  <p>
+    Whether you need complete house repainting, rental property refresh,
+    villa exterior protection or commercial space painting in Navi Mumbai,
+    we provide transparent pricing, professional supervision and on-time
+    project delivery. Our focus is to create elegant, long-lasting finishes
+    that enhance the beauty and value of your property.
+  </p>
+
+</div>
+
 
     </div>
+    
     </section>
     </>
   );

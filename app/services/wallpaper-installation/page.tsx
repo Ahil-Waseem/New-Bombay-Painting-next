@@ -1,9 +1,102 @@
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
 
+export const metadata = {
+  title: "Wallpaper Installation Services in Mumbai | Professional Wallpaper Installers | New Bombay Painting",
+  description:
+    "Looking for professional wallpaper installation services in Mumbai? New Bombay Painting offers expert wallpaper fixing, removal, textured wallpaper, 3D wallpaper and vinyl installation with flawless finishing and affordable pricing.",
+  keywords: [
+    "Wallpaper installation Mumbai",
+    "Wallpaper installer near me",
+    "Wallpaper fixing services",
+    "Vinyl wallpaper installation",
+    "3D wallpaper installation Mumbai",
+    "Professional wallpaper contractors",
+    "Wallpaper removal services",
+    "New Bombay Painting"
+  ],
+};
+
 function page() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/wallpaper-installation#service",
+        serviceType: "Wallpaper Installation Service",
+        name: "Professional Wallpaper Installation in Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        description:
+          "Expert wallpaper installation services including vinyl, fabric, textured and 3D wallpapers for residential and commercial properties with professional finishing."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does wallpaper installation typically take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Wallpaper installation usually takes 1–2 days depending on room size, wall condition and design complexity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can wallpaper be installed in humid areas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes, moisture-resistant vinyl wallpapers are suitable for humid areas such as kitchens and bathrooms."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the lifespan of wallpaper?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "With proper maintenance and professional installation, wallpaper can last between 5 to 10 years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is wallpaper removable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes, wallpaper can be safely removed by professionals without damaging the wall surface."
+            }
+          }
+        ]
+      }
+    ])
+  }}
+/>
+
          <ServicePageBanner
                     title="Professional Painting Services"
                     description="High-quality interior and exterior painting solutions tailored for your space."
@@ -28,16 +121,25 @@ function page() {
           Find Trusted Wallpaper Installers Near You
         </h1>
 
-        <p className="text-gray-300 leading-8">
-          Wallpapers are one of the most beautiful ways to spruce up your home,
-          and they blend effortlessly with any type of design style or ambience
-          that you’ve decided on. With the perfect choice of wallpaper, you can
-          create a perfectly balanced home interior. This is where New Bombay
-          Painting’s professional wallpaper installer services step in. With
-          our expert guidance, you can choose the perfect wallpaper, understand
-          the right way to apply it, and even learn useful tricks and tips to
-          maintain it for long-lasting elegance.
-        </p>
+       <p className="text-gray-300 leading-8">
+  Wallpapers are one of the most beautiful ways to spruce up your home,
+  and they blend effortlessly with any type of design style or ambience
+  that you’ve decided on. With the perfect choice of wallpaper, you can
+  create a perfectly balanced home interior. For complete wall transformation,
+  you can also explore our{" "}
+  <a
+    href="/services/interior-painting"
+    className="text-yellow-400 underline"
+  >
+    Interior Painting Services
+  </a>{" "}
+  for a flawless finish. This is where New Bombay
+  Painting’s professional wallpaper installer services step in. With
+  our expert guidance, you can choose the perfect wallpaper, understand
+  the right way to apply it, and even learn useful tricks and tips to
+  maintain it for long-lasting elegance.
+</p>
+
 
         {/* ================= TYPES OF WALLPAPER ================= */}
 
@@ -45,13 +147,21 @@ function page() {
           Types of Wallpaper for Your Home
         </h2>
 
-        <p className="text-gray-300 leading-8">
-          Wallpapers are available in various designs and finishes, allowing
-          them to complement any type of home décor. Our wallpapering
-          professionals at New Bombay Painting help you understand which style
-          suits your space the best. Popular types include vinyl, fabric,
-          textured, and 3D wallpaper.
-        </p>
+       <p className="text-gray-300 leading-8">
+  Wallpapers are available in various designs and finishes, allowing
+  them to complement any type of home décor. Our wallpapering
+  professionals at{" "}
+  <a
+    href="https://newbombaypainting.in/" 
+    className="text-yellow-400 underline"
+  >
+    New Bombay Painting
+  </a>{" "}
+  help you understand which style
+  suits your space the best. Popular types include vinyl, fabric,
+  textured, and 3D wallpaper.
+</p>
+
 
         {/* Vinyl */}
         <div className="space-y-4">

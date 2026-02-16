@@ -1,6 +1,36 @@
 import AutoScrollGallerySadeCard from "@/app/components/AutoScrollGallerySadeCard";
 import ServicePageBanner from "@/app/components/ServicePageBanner";
 
+export const metadata = {
+  title:
+    "Exterior Painting Services in Mumbai & Navi Mumbai | Weatherproof Experts",
+  description:
+    "Professional exterior painting services in Mumbai & Navi Mumbai. Crack repair, waterproof primer, weatherproof coating and long-lasting finishes for villas, societies and commercial buildings.",
+  keywords: [
+    "Exterior painting Mumbai",
+    "Exterior painting Navi Mumbai",
+    "Weatherproof painting services",
+    "Building exterior painting",
+    "Society exterior painting Mumbai",
+    "Villa exterior painting",
+    "Waterproof exterior paint",
+    "Asian Paints Ultima Protek Mumbai"
+  ],
+  alternates: {
+    canonical:
+      "https://newbombaypainting.in/services/exterior-painting",
+  },
+  openGraph: {
+    title:
+      "Exterior Painting Services in Mumbai | New Bombay Painting",
+    description:
+      "Weather-resistant exterior painting with waterproof protection and long-lasting finish for homes and commercial properties.",
+    url: "https://newbombaypainting.in/services/exterior-painting",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
+
 
 export default function ExteriorPaintingPage() {
   const galleryData = [
@@ -22,6 +52,73 @@ export default function ExteriorPaintingPage() {
   ];
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/exterior-painting#service",
+        serviceType: "Exterior Painting Services",
+        name: "Exterior Painting Services in Mumbai & Navi Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        description:
+          "Professional exterior painting services including crack repair, waterproof primer application and weatherproof coating for residential and commercial properties."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best time to paint a house's exterior?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "The best time for exterior painting in Mumbai is during dry months when humidity and rainfall are low. Stable weather ensures proper drying and long-lasting finish."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does exterior paint last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "With proper surface preparation and premium weatherproof systems, exterior paint can last between 7–12 years depending on exposure and maintenance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which paint is best for exterior painting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "High-quality weatherproof paints such as Asian Paints Apex, Ultima Protek, Nerolac Excel and Dulux Weathershield are ideal for exterior surfaces."
+            }
+          }
+        ]
+      }
+    ]),
+  }}
+/>
+
       <ServicePageBanner
         title="Professional Painting Services"
         description="High-quality interior and exterior painting solutions tailored for your space."
@@ -48,20 +145,35 @@ export default function ExteriorPaintingPage() {
       <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
         Exterior Painting Services in Mumbai & Navi Mumbai
       </h1>
-      <p className="text-gray-200 leading-relaxed">
-        Your building exterior speaks before you do. Whether it’s a bungalow,
-        housing society, commercial building or villa, the outside walls create
-        the first impression. At <strong>New Bombay Painting</strong>, we
-        specialise in high-performance exterior painting systems that not only
-        enhance appearance but also protect your property from Mumbai’s harsh
-        weather conditions.
-      </p>
-      <p className="text-gray-200 leading-relaxed">
-        With over 30 years of hands-on experience, we provide professional
-        exterior painting services across Mumbai, Navi Mumbai, Pune, Lonavala
-        and nearby cities, delivering crack-resistant, waterproof and
-        long-lasting finishes.
-      </p>
+    <p className="text-gray-200 leading-relaxed">
+  Your building exterior speaks before you do. Whether it’s a bungalow,
+  housing society, commercial building or villa, the outside walls create
+  the first impression. At{" "}
+  <a
+    href="https://newbombaypainting.in/"
+    className="text-yellow-400 underline"
+  >
+    <strong>New Bombay Painting</strong>
+  </a>
+  , we specialise in high-performance exterior painting systems that not only
+  enhance appearance but also protect your property from Mumbai’s harsh
+  weather conditions.
+</p>
+
+<p className="text-gray-200 leading-relaxed">
+  With over 30 years of hands-on experience, we provide professional
+  exterior painting services across Mumbai, Navi Mumbai, Pune, Lonavala
+  and nearby cities, delivering crack-resistant, waterproof and
+  long-lasting finishes. We also offer{" "}
+  <a
+    href="/services/interior-painting"
+    className="text-yellow-400 underline"
+  >
+    interior painting services
+  </a>{" "}
+  for complete residential and commercial transformation solutions.
+</p>
+
     </div>
 
     {/* WHY EXTERIOR PAINTING */}
@@ -175,13 +287,29 @@ export default function ExteriorPaintingPage() {
     </div>
 
     <div className="space-y-5">
-      <h2 className="text-2xl font-semibold text-yellow-400">
-Why Choose New Bombay Painting?      </h2>
-      <p className="text-gray-200 leading-relaxed">
-        With decades of field experience, we focus on durability, safety and finish quality. Our trained painters follow safety standards, use proper scaffolding and deliver work with attention to detail. We believe in honest communication, transparent pricing and long-term client relationships.
-      If your exterior walls are fading, cracking or showing signs of dampness, this is the right time to act. Contact New Bombay Painting today for a free site visit and expert consultation.
-      We don’t just paint walls — we protect and enhance your property for years to come.
-      </p>
+     <h2 className="text-2xl font-semibold text-yellow-400">
+  Why Choose New Bombay Painting?
+</h2>
+
+<p className="text-gray-200 leading-relaxed">
+  With decades of field experience, we focus on durability, safety and finish quality. Our trained painters follow safety standards, use proper scaffolding and deliver work with attention to detail. We believe in honest communication, transparent pricing and long-term client relationships.
+  If your exterior walls are fading, cracking or showing signs of dampness, this is the right time to act. Contact{" "}
+  <a
+    href="/services/texture-painting"
+    className="text-yellow-400 underline"
+  >
+    New Bombay Painting
+  </a>{" "}
+  today for a free site visit and expert consultation. We also provide{" "}
+  <a
+    href="/services/pop-false-ceiling"
+    className="text-yellow-400 underline"
+  >
+    POP false ceiling services
+  </a>{" "}
+  to ensure complete property transformation. We don’t just paint walls — we protect and enhance your property for years to come.
+</p>
+
    
     </div>
 

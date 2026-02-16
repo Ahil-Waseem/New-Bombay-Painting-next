@@ -1,6 +1,36 @@
 import AutoScrollGallerySadeCard from '@/app/components/AutoScrollGallerySadeCard';
 import ServicePageBanner from '@/app/components/ServicePageBanner';
 import React from 'react'
+export const metadata = {
+  title:
+    "Interior Painting Services in Mumbai | Professional House Painters",
+  description:
+    "Expert interior painting services in Mumbai, Navi Mumbai & Pune. Smooth finish, premium emulsions, distemper, designer walls and long-lasting results by experienced painting professionals.",
+  keywords: [
+    "Interior painting Mumbai",
+    "House painters Mumbai",
+    "Interior painting contractor",
+    "Wall painting services Mumbai",
+    "Distemper painting Mumbai",
+    "Home interior painting cost",
+    "Professional painters Navi Mumbai",
+    "Flat interior painting"
+  ],
+  alternates: {
+    canonical:
+      "https://newbombaypainting.in/services/interior-painting",
+  },
+  openGraph: {
+    title:
+      "Interior Painting Services in Mumbai | New Bombay Painting",
+    description:
+      "Premium interior wall painting with smooth finish, designer textures and long-lasting durability.",
+    url: "https://newbombaypainting.in/services/interior-painting",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
+
 
 function page() {
    const galleryData = [
@@ -22,6 +52,74 @@ function page() {
   ];
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/interior-painting#service",
+        serviceType: "Interior Painting Services",
+        name: "Interior Painting Services in Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        description:
+          "Professional interior painting services including surface preparation, putty work, primer application and premium paint finishes for residential and commercial properties."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which type of paint is ideal for home interiors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Water-based emulsion paints are the most preferred choice for modern homes due to durability, smooth finish and low maintenance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does interior paint last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Professionally applied premium interior paint can last between five to ten years depending on maintenance and room usage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is primer necessary before repainting walls?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Primer improves adhesion, enhances colour accuracy and ensures a smooth, durable finish. It is recommended especially when changing wall colours."
+            }
+          }
+        ]
+      }
+    ]),
+  }}
+/>
+
         <ServicePageBanner
               title="Professional Painting Services"
               description="High-quality interior and exterior painting solutions tailored for your space."
@@ -43,41 +141,57 @@ function page() {
   <div className="max-w-7xl mx-auto px-6 py-16 space-y-16 text-white">
 
     {/* PAGE TITLE */}
-    <div className="space-y-6">
-      <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-        Interior Painting Services
-      </h1>
+  <div className="space-y-6">
+  <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
+    Interior Painting Services
+  </h1>
 
-      <p className="text-lg leading-relaxed">
-        Interior painting is one of the most effective ways to refresh and transform your home without major renovation.
-        A professionally painted interior enhances comfort, improves aesthetics, and increases the overall value of your property.
-        At New Bombay Painting, we deliver high-quality interior painting solutions across Mumbai, Navi Mumbai, Thane, Pune and nearby regions,
-        ensuring smooth finishes, long-lasting durability, and premium craftsmanship.
-      </p>
-    </div>
+  <p className="text-lg leading-relaxed">
+    Interior painting is one of the most effective ways to refresh and transform your home without major renovation.
+    A professionally painted interior enhances comfort, improves aesthetics, and increases the overall value of your property.
+    At{" "}
+    <a
+      href="https://newbombaypainting.in/"
+      className="text-yellow-400 underline"
+    >
+      New Bombay Painting
+    </a>
+    , we deliver high-quality interior painting solutions across Mumbai, Navi Mumbai, Thane, Pune and nearby regions,
+    ensuring smooth finishes, long-lasting durability, and premium craftsmanship.
+  </p>
+</div>
+
 
     {/* WHAT IS INTERIOR PAINTING */}
     <div className="space-y-6">
-      <h2 className="text-2xl font-semibold text-yellow-400">
-        What is Interior Home Painting?
-      </h2>
+  <h2 className="text-2xl font-semibold text-yellow-400">
+    What is Interior Home Painting?
+  </h2>
 
-      <p className="leading-relaxed">
-        Interior home painting refers to the complete preparation and painting of internal walls, ceilings,
-        trims, doors, and selected surfaces within a property. It involves proper cleaning, crack filling,
-        putty application, sanding, priming, and professional paint layering to achieve a flawless result.
-        Interior painting is not just about applying colour — it is about creating an atmosphere that reflects your
-        lifestyle, personality, and comfort preferences.
-      </p>
+  <p className="leading-relaxed">
+    Interior home painting refers to the complete preparation and painting of internal walls, ceilings,
+    trims, doors, and selected surfaces within a property. It involves proper cleaning, crack filling,
+    putty application, sanding, priming, and professional paint layering to achieve a flawless result.
+    Interior painting is not just about applying colour — it is about creating an atmosphere that reflects your
+    lifestyle, personality, and comfort preferences.
+  </p>
 
-      <p className="leading-relaxed">
-        At New Bombay Painting, we understand that every home has unique lighting, structure,
-        and design requirements. Our team carefully evaluates wall conditions and selects
-        the appropriate paint type and finish to ensure superior results. Whether you are
-        repainting a single room or renovating your entire home, we ensure precision,
-        cleanliness, and long-term performance.
-      </p>
-    </div>
+  <p className="leading-relaxed">
+    At New Bombay Painting, we understand that every home has unique lighting, structure,
+    and design requirements. Our team carefully evaluates wall conditions and selects
+    the appropriate paint type and finish to ensure superior results. Whether you are
+    repainting a single room or renovating your entire home, we ensure precision,
+    cleanliness, and long-term performance, along with professional{" "}
+    <a
+      href="/services/exterior-painting"
+      className="text-yellow-400 underline"
+    >
+      exterior painting services
+    </a>{" "}
+    for complete property enhancement.
+  </p>
+</div>
+
 
     {/* BENEFITS */}
     <div className="space-y-6">

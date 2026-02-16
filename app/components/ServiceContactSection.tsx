@@ -98,7 +98,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           </div>
 
           {/* RIGHT FORM */}
-          <div className="px-40 py-30">
+          <div className="px-5 py-5 md:px-40 py-30">
             <h3 className="text-2xl font-semibold">Book Site Visit</h3>
             <p className="text-gray-600 mt-2 mb-8">
               Get proper inspection and painting guidance from our experts.

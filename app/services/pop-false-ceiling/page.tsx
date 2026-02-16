@@ -1,9 +1,106 @@
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
 
+export const metadata = {
+  title:
+    "POP & False Ceiling Services in Mumbai | Gypsum Ceiling Experts",
+  description:
+    "Professional POP and false ceiling installation in Mumbai. Gypsum, PVC, designer ceilings with modern lighting integration and durable finish by experienced experts.",
+  keywords: [
+    "False ceiling Mumbai",
+    "POP ceiling contractor Mumbai",
+    "Gypsum ceiling installation",
+    "PVC false ceiling Mumbai",
+    "Ceiling design services Mumbai",
+    "False ceiling cost per sqft",
+    "Designer ceiling Mumbai",
+    "Modern ceiling lighting design"
+  ],
+  alternates: {
+    canonical:
+      "https://newbombaypainting.in/services/pop-false-ceiling",
+  },
+  openGraph: {
+    title:
+      "POP & False Ceiling Services in Mumbai | New Bombay Painting",
+    description:
+      "Modern false ceiling designs with gypsum, PVC and lighting solutions for homes and offices.",
+    url: "https://newbombaypainting.in/services/pop-false-ceiling",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
+
 function page() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id":
+          "https://newbombaypainting.in/services/pop-false-ceiling#service",
+        serviceType: "POP & False Ceiling Installation",
+        name: "False Ceiling Services in Mumbai",
+        provider: {
+          "@type": "PaintingContractor",
+          name: "New Bombay Painting",
+          url: "https://newbombaypainting.in/",
+          telephone: [
+            "+919793167187",
+            "+919819584682",
+            "+919320837842",
+            "+918736963061"
+          ],
+          email: "newbombaypainting302@gmail.com"
+        },
+        areaServed: [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Thane" }
+        ],
+        description:
+          "Professional false ceiling installation including gypsum, POP, PVC and modern lighting integration for residential and commercial properties."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a 100 sqft false ceiling cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "False ceiling cost ranges between ₹5,000 to ₹10,000 depending on material, lighting and design complexity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is better, PVC or POP ceiling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "PVC ceilings are moisture-resistant while POP offers greater design flexibility and customization."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the life of a false ceiling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "A professionally installed false ceiling can last between 15 to 20 years with proper maintenance."
+            }
+          }
+        ]
+      }
+    ]),
+  }}
+/>
+
          <ServicePageBanner
                     title="Professional Painting Services"
                     description="High-quality interior and exterior painting solutions tailored for your space."
@@ -27,60 +124,92 @@ function page() {
           What You Should Know About False Ceiling Designs Before Installing
         </h1>
 
-        <p className="text-gray-300 leading-8">
-          Before starting a false ceiling design project with New Bombay Painting,
-          careful planning around several key factors can make a big difference
-          in achieving a successful and stylish outcome.
-        </p>
+       <p className="text-gray-300 leading-8">
+  Before starting a false ceiling design project with{" "}
+  <a
+    href="https://newbombaypainting.in/"
+    className="text-yellow-400 underline"
+  >
+    New Bombay Painting
+  </a>
+  , careful planning around several key factors can make a big difference
+  in achieving a successful and stylish outcome.
+</p>
+
 
         {/* ================= KEY FACTORS ================= */}
 
-        <div className="space-y-8">
+       <div className="space-y-8">
 
-          <h2 className="text-3xl font-semibold text-yellow-400">Budget</h2>
-          <p className="text-gray-300 leading-8">
-            Budgeting for any false ceiling design is crucial as it helps you
-            choose the most suitable material and style without overspending.
-            POP offers customisation potential, while gypsum is durable and easy
-            to install so that you can tailor your choice based on your budget
-            and design goals.
-          </p>
+  <h2 className="text-3xl font-semibold text-yellow-400">Budget</h2>
+  <p className="text-gray-300 leading-8">
+    Budgeting for any false ceiling design is crucial as it helps you
+    choose the most suitable material and style without overspending.
+    POP offers customisation potential, while gypsum is durable and easy
+    to install so that you can tailor your choice based on your budget
+    and design goals. For homeowners planning a complete upgrade, combining
+    ceiling work with{" "}
+    <a
+      href="/services/interior-painting"
+      className="text-yellow-400 underline"
+    >
+      interior painting services
+    </a>{" "}
+    can help optimise overall renovation cost.
+  </p>
 
-          <h2 className="text-3xl font-semibold text-yellow-400">Room Height</h2>
-          <p className="text-gray-300 leading-8">
-            The false ceiling requires a few inches of clearance. If your space
-            has a low ceiling, adding a false ceiling might make it feel cramped.
-            Our design experts assess whether the height of your residential room
-            or commercial hall can support the false ceiling design without
-            compromising comfort.
-          </p>
+  <h2 className="text-3xl font-semibold text-yellow-400">Room Height</h2>
+  <p className="text-gray-300 leading-8">
+    The false ceiling requires a few inches of clearance. If your space
+    has a low ceiling, adding a false ceiling might make it feel cramped.
+    Our design experts assess whether the height of your residential room
+    or commercial hall can support the false ceiling design without
+    compromising comfort.
+  </p>
 
-          <h2 className="text-3xl font-semibold text-yellow-400">Lighting</h2>
-          <p className="text-gray-300 leading-8">
-            False ceilings offer a perfect canvas for creative lighting, from
-            recessed to cove lighting, transforming a room’s aesthetic. Aligning
-            ceiling design with lighting style creates a cohesive atmosphere.
-            For example, a modular kitchen design requires less lighting than
-            a bedroom.
-          </p>
+  <h2 className="text-3xl font-semibold text-yellow-400">Lighting</h2>
+  <p className="text-gray-300 leading-8">
+    False ceilings offer a perfect canvas for creative lighting, from
+    recessed to cove lighting, transforming a room’s aesthetic. Aligning
+    ceiling design with lighting style creates a cohesive atmosphere.
+    For example, a modular kitchen design requires less lighting than
+    a bedroom. Pairing ceiling lighting with professional{" "}
+    <a
+      href="/services/exterior-painting"
+      className="text-yellow-400 underline"
+    >
+      exterior painting services
+    </a>{" "}
+    ensures your entire property maintains a consistent and elegant finish.
+  </p>
 
-          <h2 className="text-3xl font-semibold text-yellow-400">Materials</h2>
-          <p className="text-gray-300 leading-8">
-            Quality materials ensure that your false ceiling remains appealing
-            and relevant without requiring frequent updates. They balance
-            classic elements with modern touches, saving money on future
-            remodelling costs.
-          </p>
+  <h2 className="text-3xl font-semibold text-yellow-400">Materials</h2>
+  <p className="text-gray-300 leading-8">
+    Quality materials ensure that your false ceiling remains appealing
+    and relevant without requiring frequent updates. They balance
+    classic elements with modern touches, saving money on future
+    remodelling costs. Before finalising materials, it is always wise to
+    review expert recommendations such as our{" "}
+    <a
+      href="/blog/how-to-choose-best-painting-service-in-mumbai"
+      className="text-yellow-400 underline"
+    >
+      guide on choosing the best painting service in Mumbai
+    </a>{" "}
+    to make informed decisions.
+  </p>
 
-          <h2 className="text-3xl font-semibold text-yellow-400">
-            Room Layout and Design
-          </h2>
-          <p className="text-gray-300 leading-8">
-            The ceiling design should harmonise with the room's furniture,
-            colours, and style. When it blends seamlessly, it elevates the
-            entire space rather than appearing as a separate element.
-          </p>
-        </div>
+  <h2 className="text-3xl font-semibold text-yellow-400">
+    Room Layout and Design
+  </h2>
+  <p className="text-gray-300 leading-8">
+    The ceiling design should harmonise with the room's furniture,
+    colours, and style. When it blends seamlessly, it elevates the
+    entire space rather than appearing as a separate element.
+  </p>
+
+</div>
+
 
         {/* ================= ADVANTAGES ================= */}
 

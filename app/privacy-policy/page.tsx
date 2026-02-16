@@ -1,8 +1,46 @@
 import React from 'react'
+export const metadata = {
+  title: "Privacy Policy | New Bombay Painting",
+  description:
+    "Read the Privacy Policy of New Bombay Painting to understand how we collect, use and protect your personal information when you use our website and services.",
+  alternates: {
+    canonical: "https://newbombaypainting.in/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy | New Bombay Painting",
+    description:
+      "Learn how New Bombay Painting protects your personal data and maintains privacy standards.",
+    url: "https://newbombaypainting.in/privacy-policy",
+    siteName: "New Bombay Painting",
+    type: "website",
+  },
+};
 
 export default function PrivacyPolicyPage() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://newbombaypainting.in/privacy-policy",
+      name: "Privacy Policy",
+      url: "https://newbombaypainting.in/privacy-policy",
+      publisher: {
+        "@type": "Organization",
+        name: "New Bombay Painting",
+        url: "https://newbombaypainting.in/",
+        email: "newbombaypainting302@gmail.com",
+        telephone: "+919819584682"
+      },
+      description:
+        "Official Privacy Policy page of New Bombay Painting outlining how user data is collected, used and protected."
+    }),
+  }}
+/>
+
           <section className="bg-black text-white py-16 px-6 sm:px-12 lg:px-24 leading-relaxed">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
