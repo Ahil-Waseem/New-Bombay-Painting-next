@@ -36,17 +36,17 @@ export default function ExteriorPaintingPage() {
   const galleryData = [
     {
       src: "/images/shadecard/colour-shade-card1.webp",
-      link: "/service-1",
+      link: "/services/interior-painting",
       buttonText: "Interior Work",
     },
     {
       src: "/images/shadecard/premium-colour-shade-card2.webp",
-      link: "/service-2",
+      link: "/services/exterior-painting",
       buttonText: "Exterior Work",
     },
     {
       src: "/images/shadecard/premium-melamine-shade-card3.webp",
-      link: "/service-3",
+      link: "/services/texture-painting",
       buttonText: "Texture Design",
     },
   ];

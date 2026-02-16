@@ -31,34 +31,34 @@ export default function Home() {
    const galleryData = [
     {
       src: "/images/shadecard/colour-shade-card1.webp",
-      link: "/service-1",
+      link: "/services/interior-painting",
       buttonText: "Interior Work",
     },
     {
       src: "/images/shadecard/premium-colour-shade-card2.webp",
-      link: "/service-2",
+      link: "/services/exterior-painting",
       buttonText: "Exterior Work",
     },
     {
       src: "/images/shadecard/premium-melamine-shade-card3.webp",
-      link: "/service-3",
+      link: "/services/texture-painting",
       buttonText: "Texture Design",
     },
   ];
      const galleryData2 = [
     {
       src: "/images/shadecard/premium-pu-shade-card7.webp",
-      link: "/service-1",
+      link: "/services/pop-false-ceiling",
       buttonText: "PU",
     },
     {
       src: "/images/shadecard/premium-exterior-emulsun-sade-card10.webp",
-      link: "/service-2",
+      link: "/services/exterior-painting",
       buttonText: "Exterior Work",
     },
     {
       src: "/images/shadecard/premium-royle-plat-texture-shade-card5.webp",
-      link: "/service-3",
+      link: "/services/texture-painting",
       buttonText: "Texture Design",
     },
   ];
