@@ -83,25 +83,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          {/* Google Analytics Script */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-SP9SZ4YDS1"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-SP9SZ4YDS1');
-          `}
-        </Script>
+      
         {/* ✅ NAVBAR WITH LINKS */}
         <Navbar links={navLinks} ctaText="Contact Us" />
 <GoogleAnalytics />
         {/* PAGE CONTENT */}
         {children}
 
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SP9SZ4YDS1"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-SP9SZ4YDS1');
+          `}
+        </Script>
         {/* FOOTER */}
         <Footer />
       </body>
