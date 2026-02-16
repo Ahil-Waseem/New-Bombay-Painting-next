@@ -121,7 +121,7 @@ export default function PainterNearMeNaviMumbai() {
             description="High-quality interior and exterior painting solutions tailored for your space."
             primaryCta={{
               text: "Book Site Visit",
-              href: "#contact",
+              href: "/contact",
             }}
             secondaryCta={{
               text: "View Services",
