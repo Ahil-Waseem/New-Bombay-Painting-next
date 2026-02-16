@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
+// import Script from "next/script";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import GoogleAnalytics from "./components/GoogleAnalytics";
+// import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -82,16 +82,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        {/* <head>
+
+        Google Search Console Verification
+        <meta
+          name="google-site-verification"
+          content="YAHAN_APNA_VERIFICATION_CODE_DALO"
+        />
+
+      </head> */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
       
         {/* ✅ NAVBAR WITH LINKS */}
         <Navbar links={navLinks} ctaText="Contact Us" />
-<GoogleAnalytics />
+{/* <GoogleAnalytics /> */}
         {/* PAGE CONTENT */}
         {children}
 
-        {/* Google Analytics Script */}
-        <Script
+       {/* Google Analytics Script */}
+        {/* <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SP9SZ4YDS1"
           strategy="afterInteractive"
         />
@@ -100,11 +109,10 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', 'G-SP9SZ4YDS1');
           `}
-        </Script>
+        </Script> */}
         {/* FOOTER */}
         <Footer />
       </body>
