@@ -132,6 +132,7 @@ function page() {
                           }}
                           bgImage="/images/services/service4.webp"
                           // sideImage="/images/services/"
+                          mobileBgImage="/images/services/mob-service2.webp" 
                           sideVideo="/images/services/house-dancing2.mp4"
                         />
                               <AutoScrollGallerySadeCard items={galleryData} speed={30} />;

@@ -13,6 +13,7 @@ interface PageBannerProps {
     href: string;
   };
   bgImage: string;
+  mobileBgImage?: string; 
   sideImage?: string;
   sideVideo?: string;
 }
@@ -24,21 +25,39 @@ export default function ServicePageBanner({
   secondaryCta,
   bgImage,
   sideImage,
+  mobileBgImage,
   sideVideo,
 }: PageBannerProps) {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* BACKGROUND IMAGE */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src={bgImage}
-          alt="Banner Background"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/5" />
-      </div>
+     {/* BACKGROUND IMAGE */}
+<div className="absolute inset-0 -z-10">
+  {/* Desktop BG */}
+  <div className="hidden md:block absolute inset-0">
+    <Image
+      src={bgImage}
+      alt="Banner Background"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
+
+  {/* Mobile BG */}
+  {mobileBgImage && (
+    <div className="block md:hidden absolute inset-0">
+      <Image
+        src={mobileBgImage}
+        alt="Mobile Banner Background"
+        fill
+        className="object-cover"
+        priority
+      />
+    </div>
+  )}
+
+  <div className="absolute inset-0 bg-black/5" />
+</div>
 
       <div className="max-w-[90rem] mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
         {/* LEFT CONTENT */}

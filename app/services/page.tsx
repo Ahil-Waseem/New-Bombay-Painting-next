@@ -1,9 +1,27 @@
 import Image from "next/image";
 import ServiceContactSection from "../components/ServiceContactSection";
 import WhyChooseUsAnimated from "../components/WhyChooseUsAnimated";
+import ServicePageBanner from "../components/ServicePageBanner";
 
 export default function ServicesPage() {
   return (
+    <>
+    <ServicePageBanner
+                        title="Professional Painting Services"
+                        description="High-quality interior and exterior painting solutions tailored for your space."
+                        primaryCta={{
+                          text: "Book Site Visit",
+                          href: "/contact",
+                        }}
+                        secondaryCta={{
+                          text: "View Services",
+                          href: "/services",
+                        }}
+                        bgImage="/images/services/service2.webp"
+                        // sideImage="/images/services/"
+                        mobileBgImage="/images/services/mob-service10.webp" 
+                        sideVideo="/images/services/house-dancing1.mp4"
+                      />
     <main className="w-full">
 
       {/* ===== Banner Section ===== */}
@@ -182,5 +200,6 @@ export default function ServicesPage() {
 </section>
 
     </main>
+    </>
   );
 }

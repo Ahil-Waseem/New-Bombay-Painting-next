@@ -130,6 +130,7 @@ export default function PainterNearMePune() {
             }}
             bgImage="/images/painternearme/painter-near-me2.webp"
             // sideImage="/images/services/"
+            mobileBgImage="/images/services/mob-service4.webp" 
             sideVideo="/images/services/house-dancing1.mp4"
           />
  <DynamicLuxurySlider data={bedroomData} />

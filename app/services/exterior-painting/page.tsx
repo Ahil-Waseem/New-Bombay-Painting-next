@@ -124,7 +124,7 @@ export default function ExteriorPaintingPage() {
         description="High-quality interior and exterior painting solutions tailored for your space."
         primaryCta={{
           text: "Book Site Visit",
-          href: "/contact",
+          href: "/contact", 
         }}
         secondaryCta={{
           text: "View Services",
@@ -132,6 +132,7 @@ export default function ExteriorPaintingPage() {
         }}
         bgImage="/images/services/service1.webp"
         // sideImage="/images/services/"
+        mobileBgImage="/images/services/mob-service1.webp" 
         sideVideo="/images/services/house-dancing1.mp4"
       />
       <AutoScrollGallerySadeCard items={galleryData} speed={30} />;

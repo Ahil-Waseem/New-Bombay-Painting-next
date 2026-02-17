@@ -129,6 +129,7 @@ export default function PainterNearMeNaviMumbai() {
             }}
             bgImage="/images/painternearme/painter-near-me.webp"
             // sideImage="/images/services/"
+            mobileBgImage="/images/services/mob-service3.webp" 
             sideVideo="/images/services/house-dancing1.mp4"
           />
          <DynamicLuxurySlider data={bedroomData} />

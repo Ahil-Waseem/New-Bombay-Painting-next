@@ -105,6 +105,7 @@ function page() {
                     }}
                     bgImage="/images/services/service2.webp"
                     // sideImage="/images/services/"
+                    mobileBgImage="/images/services/mob-service6.webp" 
                     sideVideo="/images/services/house-dancing1.mp4"
                   />
 

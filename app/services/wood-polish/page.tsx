@@ -74,6 +74,7 @@ function page() {
                     }}
                     bgImage="/images/services/service2.webp"
                     // sideImage="/images/services/"
+                    mobileBgImage="/images/services/mob-service8.webp" 
                     sideVideo="/images/services/house-dancing1.mp4"
                   />
                    <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">

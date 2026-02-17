@@ -138,6 +138,7 @@ export default function PainterNearMeMumbai() {
         }}
         bgImage="/images/painternearme/painter-near-me3.webp"
         // sideImage="/images/services/"
+        mobileBgImage="/images/services/mob-service2.webp" 
         sideVideo="/images/services/house-dancing1.mp4"
       />
 
