@@ -136,7 +136,7 @@ function page() {
               mobileBgImage="/images/services/mob-service3.webp" 
               sideVideo="/images/services/house-dancing1.mp4"
             />
-                  <AutoScrollGallerySadeCard items={galleryData} speed={30} />;
+                  <AutoScrollGallerySadeCard items={galleryData} speed={30} />
             
             <section className="w-full bg-black">
   <div className="max-w-7xl mx-auto px-6 py-16 space-y-16 text-white">
