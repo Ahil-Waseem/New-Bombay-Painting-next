@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: "/services/wallpaper-installation",
         permanent: true,
       },
+         {
+        source: "/interior-painting",
+        destination: "/services/interior-painting",
+        permanent: true,
+      },
     ];
   },
 };

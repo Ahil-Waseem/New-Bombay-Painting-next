@@ -7,18 +7,21 @@ import Image from "next/image";
 const slides = [
   {
     image: "/images/home/hero/home-banner4.webp",
+    // mobileImage: "/images/home/hero/home-mob-ban3.webp", 
     heading: "Premium House Painting Services",
     subheading: "Flawless finish, on-time completion & post-paint cleanup",
     button: "Estimate Painting Cost",
   },
   {
     image: "/images/home/hero/home-banner1.webp",
+    // mobileImage: "/images/home/hero/home-mob-ban1.webp", 
     heading: "Villa Painting Services You Can Trust",
     subheading: "Luxury, long-lasting paint finishes for your villa",
     button: "Book Site Visit",
   },
   {
     image: "/images/home/hero/home-banner3.webp",
+    // mobileImage: "/images/home/hero/home-mob-ban2.webp", 
     heading: "Interior & Exterior Painting Experts",
     subheading: "Serving Mumbai & Navi Mumbai with quality workmanship",
     button: "Get Free Consultation",
@@ -124,6 +127,29 @@ const cleanPhone = phone.replace(/\D/g, "");
       />
       <div className="absolute inset-0 bg-black/55" />
     </div>
+      {/* Desktop Image */}
+{/* <div className="hidden sm:block relative w-full h-full">
+  <Image
+    src={slide.image}
+    alt={slide.heading}
+    fill
+    priority={index === 0}
+    draggable={false}
+    className="object-cover select-none"
+  />
+</div> */}
+
+{/* Mobile Image */}
+{/* <div className="block sm:hidden relative w-full h-full">
+  <Image
+    src={slide.mobileImage || slide.image}
+    alt={slide.heading}
+    fill
+    priority={index === 0}
+    draggable={false}
+    className="object-cover select-none"
+  />
+</div> */}
   </div>
 ))}
 
