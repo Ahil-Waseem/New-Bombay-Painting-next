@@ -42,7 +42,7 @@ export const bedroomData = [
     description:
       "Timeless colour set crafted for comfort and luxury.",
     image: "/images/projects/webp/lamination2.webp",
-    buttonText: "Shop Now",
+    // buttonText: "Shop Now",
   },
   {
     id: 2,

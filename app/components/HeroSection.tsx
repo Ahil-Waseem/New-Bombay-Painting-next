@@ -7,21 +7,21 @@ import Image from "next/image";
 const slides = [
   {
     image: "/images/home/hero/home-banner4.webp",
-    // mobileImage: "/images/home/hero/home-mob-ban3.webp", 
+    mobileImage: "/images/home/hero/home-mob-ban3.webp", 
     heading: "Premium House Painting Services",
     subheading: "Flawless finish, on-time completion & post-paint cleanup",
     button: "Estimate Painting Cost",
   },
   {
     image: "/images/home/hero/home-banner1.webp",
-    // mobileImage: "/images/home/hero/home-mob-ban1.webp", 
+    mobileImage: "/images/home/hero/home-mob-ban1.webp", 
     heading: "Villa Painting Services You Can Trust",
     subheading: "Luxury, long-lasting paint finishes for your villa",
     button: "Book Site Visit",
   },
   {
     image: "/images/home/hero/home-banner3.webp",
-    // mobileImage: "/images/home/hero/home-mob-ban2.webp", 
+    mobileImage: "/images/home/hero/home-mob-ban2.webp", 
     heading: "Interior & Exterior Painting Experts",
     subheading: "Serving Mumbai & Navi Mumbai with quality workmanship",
     button: "Get Free Consultation",
@@ -115,7 +115,7 @@ const cleanPhone = phone.replace(/\D/g, "");
     }`}
   >
     {/* IMAGE WRAPPER — mobile me chhoti height */}
-    <div className="relative w-full h-[60vh] sm:h-full">
+    {/* <div className="relative w-full h-[60vh] sm:h-full">
       <Image
         src={slide.image}
         alt={slide.heading}
@@ -124,11 +124,11 @@ const cleanPhone = phone.replace(/\D/g, "");
         draggable={false}
         className="object-cover sm:object-cover select-none"
         sizes="(max-width: 750px) 100vw, 100vw"
-      />
-      <div className="absolute inset-0 bg-black/55" />
-    </div>
+      /> */}
+      {/* <div className="absolute inset-0 bg-black/55" />
+    </div> */}
       {/* Desktop Image */}
-{/* <div className="hidden sm:block relative w-full h-full">
+<div className="hidden sm:block relative w-full h-full">
   <Image
     src={slide.image}
     alt={slide.heading}
@@ -137,19 +137,19 @@ const cleanPhone = phone.replace(/\D/g, "");
     draggable={false}
     className="object-cover select-none"
   />
-</div> */}
+</div>
 
 {/* Mobile Image */}
-{/* <div className="block sm:hidden relative w-full h-full">
+<div className="block sm:hidden relative w-full h-full">
   <Image
     src={slide.mobileImage || slide.image}
     alt={slide.heading}
     fill
     priority={index === 0}
     draggable={false}
-    className="object-cover select-none"
+    className="object-fit select-none"
   />
-</div> */}
+</div>
   </div>
 ))}
 
@@ -178,7 +178,7 @@ const cleanPhone = phone.replace(/\D/g, "");
           </div>
 
           {/* RIGHT FORM */}
-          <div className="bg-white/80 backdrop-blur-xl rounded-[28px] p-6 sm:p-8 lg:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.35)] max-w-lg w-full mx-auto self-center mb-16 lg:mb-0">
+          <div className="bg-white/40 backdrop-blur-xl rounded-[28px] p-6 sm:p-8 lg:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.35)] max-w-lg w-full mx-auto self-center mb-16 lg:mb-0">
             <h3 className="text-2xl sm:text-3xl font-extrabold text-center mb-3">
               BOOK SITE VISIT
             </h3>

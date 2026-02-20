@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
+
 interface CardItem {
   id: number;
   title: string;
@@ -74,10 +76,11 @@ export default function DynamicLuxurySlider({
                   <p className="text-gray-600 mt-4 text-sm md:text-base">
                     {card.description}
                   </p>
-
+<Link href={card.link || "/contact"}>
                   <button className="mt-6 px-8 py-3 bg-gradient-to-r from-[#C58B3A] to-[#A56B22] text-white rounded-full shadow-md hover:scale-105 transition">
                     {card.buttonText || "Book Now"}
                   </button>
+                  </Link>
                 </div>
 
               </div>
