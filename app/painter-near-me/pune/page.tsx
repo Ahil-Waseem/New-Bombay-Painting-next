@@ -43,6 +43,7 @@ export const bedroomData = [
       "Timeless bedroom set crafted for comfort and luxury.",
     image: "/images/projects/webp/img2.webp",
     buttonText: "Shop Now",
+    link: "/contact",
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ export const bedroomData = [
     description:
       "Elegant king-size bed with modern paint finish.",
     image: "/images/projects/webp/img3.webp",
+    link: "/contact",
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ export const bedroomData = [
     description:
       "Elegant king-size bed with modern wood finish.",
     image: "/images/projects/webp/img5.webp",
+    link: "/contact",
   },
   {
     id: 4,
@@ -70,6 +73,7 @@ export const bedroomData = [
     description:
       "Elegant king-size bed with modern wood finish.",
     image: "/images/projects/webp/paint5.webp",
+    link: "/contact",
   },
 ];
 

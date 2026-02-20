@@ -15,6 +15,7 @@ interface CardItem {
   image: string;
   tag?: string;
   buttonText?: string;
+  link?: string;
 }
 
 interface DynamicLuxurySliderProps {

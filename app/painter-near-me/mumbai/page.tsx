@@ -43,6 +43,7 @@ export const bedroomData = [
       "Timeless colour set crafted for comfort and luxury.",
     image: "/images/projects/webp/lamination2.webp",
     // buttonText: "Shop Now",
+    link: "/contact",
   },
   {
     id: 2,
@@ -52,6 +53,7 @@ export const bedroomData = [
     description:
       "Elegant king-size Master bed with modern finish.",
     image: "/images/projects/webp/img5.webp",
+    link: "/contact",
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ export const bedroomData = [
     description:
       "Elegant king-size bed with modern texture finish.",
     image: "/images/projects/webp/texture5.webp",
+    link: "/contact",
   },
   {
     id: 4,
@@ -70,6 +73,7 @@ export const bedroomData = [
     description:
       "Elegant polish service with modern wood finish.",
     image: "/images/projects/webp/polish2.webp",
+    link: "/contact",
   },
 ];
 
