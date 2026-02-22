@@ -1,6 +1,8 @@
 import AutoScrollGallerySadeCard from '@/app/components/AutoScrollGallerySadeCard';
 import ServicePageBanner from '@/app/components/ServicePageBanner'
 import React from 'react'
+import HomeCTA from "../../components/Cta"
+
 
 export const metadata = {
   title:
@@ -120,8 +122,8 @@ function page() {
 />
 
       <ServicePageBanner
-                          title="Professional Painting Services"
-                          description="High-quality interior and exterior painting solutions tailored for your space."
+                           title="Home Renovation Services in Mumbai & Navi Mumbai"
+  description="Complete house renovation including interior remodeling, false ceiling, waterproofing, structural repairs and modern upgrades with transparent pricing and expert workmanship."
                           primaryCta={{
                             text: "Book Site Visit",
                             href: "/contact",
@@ -135,7 +137,7 @@ function page() {
                           mobileBgImage="/images/services/mob-service2.webp" 
                           sideVideo="/images/services/house-dancing2.mp4"
                         />
-                              <AutoScrollGallerySadeCard items={galleryData} speed={30} />;
+                              <AutoScrollGallerySadeCard items={galleryData} speed={30} />
                         
                           <div className="bg-black text-white">
 
@@ -144,7 +146,7 @@ function page() {
         {/* PAGE TITLE */}
         <div className="space-y-6">
   <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-    Home Renovation Services in Mumbai
+    Complete Home Renovation Services in Mumbai & Navi Mumbai
   </h1>
 
   <p className="text-lg leading-relaxed">
@@ -152,8 +154,7 @@ function page() {
   </p>
 
   <p className="text-lg leading-relaxed">
-    Your home deserves more than just maintenance — it deserves transformation.
-    At{" "}
+A well-planned renovation can significantly increase both the comfort and long-term value of your property. At{" "}
     <a
       href="https://newbombaypainting.in/"
       className="text-yellow-400 underline"
@@ -171,6 +172,7 @@ function page() {
       interior painting services
     </a>.
   </p>
+  
 
   <p className="text-lg leading-relaxed">
     Whether you are renovating a flat, bungalow, office or commercial space,
@@ -178,6 +180,9 @@ function page() {
     transparency in pricing. We convert outdated spaces into modern,
     functional and aesthetically appealing homes.
   </p>
+  <p className="text-lg leading-relaxed">
+  If you are searching for trusted home renovation services in Mumbai or flat renovation in Navi Mumbai, our expert team delivers structured planning and premium finishing solutions.
+</p>
 </div>
 
 
@@ -233,7 +238,7 @@ function page() {
       href="/services/pop-false-ceiling"
       className="text-yellow-400 underline"
     >
-      waterproofing
+      POP false ceiling services
     </a>{" "}
     and anti-leak solutions to strengthen your property before final finishing work begins.
   </p>
@@ -252,9 +257,9 @@ function page() {
 
 
           <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-yellow-400">
+          <h3 className="text-2xl md:text-3xl font-semibold text-yellow-400">
 Kitchen Renovation:
-          </h2>
+          </h3>
 
           <p className="leading-relaxed">
           Revamp your kitchen with an improved layout, upgraded fittings, modern equipment, and better storage solutions for enhanced convenience and style.
@@ -443,11 +448,10 @@ Once the renovation is complete, we ensure the area is properly cleaned and read
 
              <details className="border border-gray-700 rounded-lg p-5">
               <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
-                How do I find the best home renovators near me?
+How do I choose the right home renovation contractor?
               </summary>
               <p className="mt-4 text-gray-200 leading-relaxed">
-                HomeTriangle has a database of the best professionals offering home renovation services all over India. Check out their ratings and testimonials from previous customers before choosing a service provider.
-              </p>
+Look for experience, completed projects, transparent pricing and verified customer feedback. A detailed site inspection and clear quotation are signs of a reliable renovation contractor.</p>
             </details>
 
   <details className="border border-gray-700 rounded-lg p-5">
@@ -482,6 +486,8 @@ Once the renovation is complete, we ensure the area is properly cleaned and read
       </section>
 
     </div>
+    <HomeCTA/>
+    
     </>
   )
 }

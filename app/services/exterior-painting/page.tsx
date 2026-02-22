@@ -120,8 +120,8 @@ export default function ExteriorPaintingPage() {
 />
 
       <ServicePageBanner
-        title="Professional Painting Services"
-        description="High-quality interior and exterior painting solutions tailored for your space."
+        title="Exterior Painting Services in Mumbai & Navi Mumbai"
+        description="Weatherproof exterior wall painting, crack repair, waterproof primer application and long-lasting protective coatings for buildings, villas and commercial properties."
         primaryCta={{
           text: "Book Site Visit",
           href: "/contact", 

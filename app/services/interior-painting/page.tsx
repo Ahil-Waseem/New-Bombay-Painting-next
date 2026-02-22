@@ -1,6 +1,9 @@
 import AutoScrollGallerySadeCard from '@/app/components/AutoScrollGallerySadeCard';
 import ServicePageBanner from '@/app/components/ServicePageBanner';
 import React from 'react'
+import HomeCTA from "../../components/Cta"
+import DynamicLuxurySlider from '@/app/components/DynamicLuxurySlider';
+
 export const metadata = {
   title:
     "Interior Painting Services in Mumbai | Professional House Painters",
@@ -30,7 +33,48 @@ export const metadata = {
     type: "website",
   },
 };
-
+export const bedroomData = [
+  {
+    id: 1,
+    tag: "INTERIOR WORK",
+    title: "Modern Interior Wall Painting",
+    price: "Starting ₹18 / sq. ft.",
+    description:
+      "Smooth putty finish with premium emulsion paint for elegant and long-lasting interior walls.",
+    image: "/images/projects/webp/lamination2.webp",
+    link: "/contact",
+  },
+  {
+    id: 2,
+    tag: "MASTER BEDROOM",
+    title: "Luxury Bedroom Interior Painting",
+    price: "Starting ₹22 / sq. ft.",
+    description:
+      "Designer colour combinations and satin finish ideal for master bedrooms and feature walls.",
+    image: "/images/projects/webp/img5.webp",
+    link: "/contact",
+  },
+  {
+    id: 3,
+    tag: "TEXTURE DESIGN",
+    title: "Premium Texture Wall Finish",
+    price: "Starting ₹45 / sq. ft.",
+    description:
+      "Modern texture painting for accent walls with durable coating and stylish depth effect.",
+    image: "/images/projects/webp/texture5.webp",
+    link: "/contact",
+  },
+  {
+    id: 4,
+    tag: "WOOD FINISH",
+    title: "Professional Wood Polish & Coating",
+    price: "Starting ₹120 / sq. ft.",
+    description:
+      "High-gloss and matte polish solutions for doors, wardrobes and wooden furniture surfaces.",
+    image: "/images/projects/webp/polish2.webp",
+    link: "/contact",
+  },
+];
 
 function page() {
    const galleryData = [
@@ -121,8 +165,8 @@ function page() {
 />
 
         <ServicePageBanner
-              title="Professional Painting Services"
-              description="High-quality interior and exterior painting solutions tailored for your space."
+               title="Interior Painting Services in Mumbai & Navi Mumbai"
+  description="Professional house painters offering smooth wall finishes, premium emulsions, distemper and designer interior painting with long-lasting durability."
               primaryCta={{
                 text: "Book Site Visit",
                 href: "/contact",
@@ -137,6 +181,8 @@ function page() {
               sideVideo="/images/services/house-dancing1.mp4"
             />
                   <AutoScrollGallerySadeCard items={galleryData} speed={30} />
+                    <DynamicLuxurySlider data={bedroomData} />
+                  
             
             <section className="w-full bg-black">
   <div className="max-w-7xl mx-auto px-6 py-16 space-y-16 text-white">
@@ -144,7 +190,7 @@ function page() {
     {/* PAGE TITLE */}
   <div className="space-y-6">
   <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-    Interior Painting Services
+  Interior Painting Services in Mumbai & Navi Mumbai
   </h1>
 
   <p className="text-lg leading-relaxed">
@@ -160,6 +206,10 @@ function page() {
     , we deliver high-quality interior painting solutions across Mumbai, Navi Mumbai, Thane, Pune and nearby regions,
     ensuring smooth finishes, long-lasting durability, and premium craftsmanship.
   </p>
+  <p className="text-lg leading-relaxed">
+  If you are searching for interior painting services in Mumbai or professional house painters in Navi Mumbai, our team provides structured surface preparation, premium paint selection and flawless execution for long-lasting results.
+</p>
+We also provide modern <a href="/services/texture-painting" className="text-yellow-400 underline">texture painting services</a> and complete <a href="/services/home-renovation" className="text-yellow-400 underline">home renovation solutions</a>.
 </div>
 
 
@@ -297,9 +347,6 @@ function page() {
        If you want to add elegance to your bedroom, warmth to your living room, or create a lively and welcoming kitchen space, distemper painting remains a timeless and cost-effective interior solution. At New Bombay Painting, we offer high-quality distemper painting services that combine traditional charm with modern execution standards.
       </p>
 
-      <p className="leading-relaxed">
-     If you want to add elegance to your bedroom, warmth to your living room, or create a lively and welcoming kitchen space, distemper painting remains a timeless and cost-effective interior solution. At New Bombay Painting, we offer high-quality distemper painting services that combine traditional charm with modern execution standards.
-      </p>
  <p className="leading-relaxed">
        Our skilled painters apply distemper with precision — whether you prefer subtle, soft tones or expressive statement shades. The result is a refined, elegant interior surface that reflects your personality while maintaining affordability.
       </p>
@@ -327,9 +374,7 @@ function page() {
        <p className="leading-relaxed">
        The type of paint — whether emulsion, enamel, distemper, or specialty coatings — depends on the surface being treated. Walls, ceilings, trims, cabinets, and metal surfaces all require specific formulations for best performance.
       </p>
-       <p className="leading-relaxed">
-       The type of paint — whether emulsion, enamel, distemper, or specialty coatings — depends on the surface being treated. Walls, ceilings, trims, cabinets, and metal surfaces all require specific formulations for best performance.
-      </p>
+      
      
     </div>
 
@@ -339,7 +384,7 @@ function page() {
       </h2>
 
       <p className="leading-relaxed">
-       At New Bombay Painting, we collaborate with India's most trusted paint manufacturers to deliver consistent quality and finish. Every brand offers unique textures, durability levels, and shade collections to suit diverse preferences.
+       At New Bombay Painting, We work with leading brands such as Asian Paints, Berger Paints, Dulux, Nerolac, Nippon Paint, Indigo and Shalimar to ensure premium finish and durability. Every brand offers unique textures, durability levels, and shade collections to suit diverse preferences.
       </p>
   <p className="leading-relaxed">
        We work extensively with Asian Paints, known for its vast colour library and premium interior emulsions that provide long-lasting smooth finishes.
@@ -637,9 +682,11 @@ Why Choose New Bombay Painting for Interior Services?      </h2>
       </details>
 
     </div>
+    
   </div>
+  
 </section>
-
+<HomeCTA/>
 
     </>
   )
