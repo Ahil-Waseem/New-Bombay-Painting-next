@@ -153,13 +153,21 @@ export default function ContactPage() {
             </p>
 
             <div className="mt-10 space-y-6 text-gray-800">
-              <div>
-                <p className="font-semibold">📍 Address</p>
-                <p className="text-gray-600">
-                  New Bombay Painting,<br />
-                  Navi Mumbai, Maharashtra – India
-                </p>
-              </div>
+           <div>
+  <p className="font-semibold">📍 Address</p>
+  <p className="text-gray-600">
+    New Bombay Painting,<br />
+    D-231, Y. Rao Chavan, Link Road,<br />
+    Ekta Nagar, Mankhurd,<br />
+    Mumbai, Maharashtra – 400043, India
+  </p>
+
+  <p className="font-semibold mt-4">📌 Areas Served</p>
+  <p className="text-gray-600">
+    Mumbai Central, Navi Mumbai, Pune, Khandala, Lonavala
+    and nearby areas.
+  </p>
+</div>
 
               <div>
                 <p className="font-semibold">📞 Phone</p>

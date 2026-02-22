@@ -39,6 +39,13 @@ export default function Footer() {
             Bringing colors to life with professional and high-quality painting
             services. Transforming spaces with creativity, care, and perfection.
           </p>
+           <p className="font-semibold">📍 Address</p>
+  <p className="text-gray-600">
+    New Bombay Painting,<br />
+    D-231, Y. Rao Chavan, Link Road,<br />
+    Ekta Nagar, Mankhurd,<br />
+    Mumbai, Maharashtra – 400043, India
+  </p>
 
           <div className="flex space-x-3 mt-6">
             <a
@@ -76,6 +83,11 @@ export default function Footer() {
             <li>
               <Link href="/blog" className="hover:text-yellow-400 transition">
                 Blog
+              </Link>
+            </li>
+             <li>
+              <Link href="/painting-rates-mumbai" className="hover:text-yellow-400 transition">
+                Rates
               </Link>
             </li>
             <li>

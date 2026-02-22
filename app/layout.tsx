@@ -63,6 +63,7 @@ const navLinks = [
   { name: "Projects", path: "/projects" },
   { name: "Blog", path: "/blog" },
   { name: "About", path: "/about" },
+  { name: "Rates", path: "/painting-rates-mumbai"}
 ];
 
 

@@ -22,5 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/painter-near-me/navi-mumbai`, lastModified: new Date() },
     { url: `${baseUrl}/privacy-policy`, lastModified: new Date() },
     { url: `${baseUrl}/terms`, lastModified: new Date() },
+    { url: `${baseUrl}/painting-rates-mumbai`, lastModified: new Date() },
+
   ];
 }
