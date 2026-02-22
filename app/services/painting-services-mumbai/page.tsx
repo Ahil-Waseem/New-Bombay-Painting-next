@@ -103,8 +103,8 @@ function page() {
 />
 
         <ServicePageBanner
-                    title="Professional Painting Services"
-                    description="High-quality interior and exterior painting solutions tailored for your space."
+                    title="Professional Painting Services in Mumbai & Navi Mumbai"
+  description="Trusted house painters offering interior, exterior, texture, waterproofing and complete home painting solutions with premium finish and transparent pricing."
                     primaryCta={{
                       text: "Book Site Visit",
                       href: "/contact",
@@ -125,7 +125,8 @@ function page() {
       <div className="max-w-7xl mx-auto px-6 py-16 space-y-16 text-white">
     <div className="space-y-6">
       <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-Professional Painting Services in Mumbai      </h1>
+  Professional Painting Services in Mumbai – Trusted House Painters Near Me and You
+     </h1>
 
     </div>
 
@@ -167,14 +168,7 @@ Whether you are planning a complete home makeover or simply refreshing your{" "}
 
   <p className="leading-relaxed">
 
-At{" "}
-<a
-  href="/services/painting-services-mumbai"
-  className="text-yellow-400 underline"
->
-  New Bombay Painting
-</a>
-, we believe that painting is not just about colour application. It is a systematic process that involves inspection, preparation, execution and finishing. Our team handles everything professionally so you can relax while we upgrade your space.
+At New Bombay Painting, we believe that painting is not just about colour application. It is a systematic process that involves inspection, preparation, execution and finishing. Our team handles everything professionally so you can relax while we upgrade your space.
 
   </p>
 
@@ -198,17 +192,6 @@ At{" "}
     <li>Metal Painting</li>
     <li>Minor Wall Repairs & Crack Filling</li>
   </ul>
-
-  <p className='leading-relaxed'>
-    Every project is handled with attention to detail, proper surface preparation and premium materials to ensure long-lasting results. If you are planning a home upgrade in hill-station areas like Lonavala, you can also explore our{" "}
-    <a
-      href="/blog/lonavala-travel-guide-2025"
-      className="text-yellow-400 underline"
-    >
-      Lonavala Travel Guide 2025
-    </a>{" "}
-    to understand the region’s climate and surroundings before scheduling your painting work.
-  </p>
 </div>
 
 
@@ -289,14 +272,8 @@ Proper cleaning, sanding, crack repair and priming are carried out before painti
 
      <div className="space-y-6">
       <h2 className="text-2xl font-semibold text-yellow-400">
-        Paint Application & Finishing
+We apply paint using professional rollers and brushes with proper layering techniques. Each coat is allowed adequate drying time to ensure uniform coverage, smooth finish and long-term durability.
       </h2>
-
-      <p className="leading-relaxed">
-Paint Application & Finishing
-
-      </p>
-
     </div>
 
      <div className="space-y-6">
@@ -309,6 +286,30 @@ Sustainable living is becoming increasingly important. We offer low-VOC and eco-
       </p>
 
     </div>
+
+    <div className="space-y-6">
+  <h2 className="text-2xl font-semibold text-yellow-400">
+    Painting & Polish Rate Guide – Mumbai
+  </h2>
+
+  <p className="leading-relaxed">
+    Below is an estimated price range for common painting and polishing services. Final quotation is provided after site inspection.
+  </p>
+
+  <ul className="list-disc pl-6 space-y-2">
+    <li>Luster / Acrylic Emulsion Finish: ₹38 – ₹50 per sq. ft.</li>
+    <li>Enamel Paint: ₹38 – ₹68 per sq. ft.</li>
+    <li>Texture Finish: ₹55 – ₹115 per sq. ft.</li>
+    <li>Duco Paint: ₹225 per sq. ft.</li>
+    <li>Melamine Finish: ₹110 – ₹195 per sq. ft.</li>
+    <li>PU / Polyurethane Finish: ₹240 – ₹260 per sq. ft.</li>
+    <li>Imported Lamination: ₹440 – ₹580 per sq. ft.</li>
+  </ul>
+
+  <p className="leading-relaxed">
+    Note: Rates may vary depending on surface condition, height, design complexity and material selection.
+  </p>
+</div>
     </div>
 </section>
 
