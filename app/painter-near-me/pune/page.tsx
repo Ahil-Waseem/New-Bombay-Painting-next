@@ -4,29 +4,17 @@ import ServicePageBanner from "@/app/components/ServicePageBanner";
 
 export const metadata = {
   title:
-    "Painter Near Me in Pune | Professional House Painters in Pune",
+    "Painter Near Me in Pune | House Painting Services",
   description:
-    "Looking for a reliable painter near you in Pune? New Bombay Painting provides expert interior painting, exterior painting, texture finishes, waterproofing and home renovation services across Pune with premium materials and on-time project completion.",
-  keywords: [
-    "Painter near me in Pune",
-    "House painters in Pune",
-    "Interior painting Pune",
-    "Exterior painting Pune",
-    "Home painting contractor Pune",
-    "Wall painting services Pune",
-    "Texture painting Pune",
-    "1BHK painting Pune",
-    "2BHK painting Pune",
-    "Villa painting Pune"
-  ],
+    "Need a trusted painter near you in Pune? New Bombay Painting offers interior painting, exterior painting, texture finishes, waterproofing and 1BHK–3BHK house painting services with premium finish and transparent pricing.",
   alternates: {
     canonical: "https://newbombaypainting.in/painter-near-me/pune",
   },
   openGraph: {
     title:
-      "Painter Near Me in Pune | Trusted Painting Contractors",
+      "Painter Near Me in Pune | Trusted House Painters",
     description:
-      "Professional house painters in Pune for interior, exterior, texture and renovation projects with premium finish and skilled workmanship.",
+      "Professional painting contractors in Pune for flats, villas and commercial properties. Site visit and transparent pricing available.",
     url: "https://newbombaypainting.in/painter-near-me/pune",
     siteName: "New Bombay Painting",
     type: "website",
@@ -80,50 +68,46 @@ export const bedroomData = [
 export default function PainterNearMePune() {
   return (
         <>
-        <script
+       <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Service",
-      "@id":
-        "https://newbombaypainting.in/painter-near-me/pune#service",
-      serviceType: "House Painting Services",
-      name: "Painter Near Me in Pune",
-      provider: {
-        "@type": "PaintingContractor",
-        name: "New Bombay Painting",
-        url: "https://newbombaypainting.in/",
-        telephone: [
-          "+919793167187",
-          "+919819584682",
-          "+919320837842",
-          "+918736963061"
-        ],
-        email: "newbombaypainting302@gmail.com",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress:
-            "D-231, Y.Rao Chavan NGR, Ekata Nagar, Link Road, Govandi, Mankhurd",
-          addressLocality: "Mumbai",
-          addressRegion: "MH",
-          postalCode: "400043",
-          addressCountry: "IN"
-        }
+      "@type": "LocalBusiness",
+      "@id": "https://newbombaypainting.in/#business",
+      name: "New Bombay Painting",
+      url: "https://newbombaypainting.in/",
+      telephone: "+919819584682",
+      email: "newbombaypainting302@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "D-231, Y. Rao Chavan, Link Road, Ekta Nagar, Mankhurd",
+        addressLocality: "Mumbai",
+        addressRegion: "MH",
+        postalCode: "400043",
+        addressCountry: "IN"
       },
-      areaServed: {
-        "@type": "City",
-        name: "Pune"
-      },
+      areaServed: [
+        { "@type": "City", name: "Pune" },
+        { "@type": "City", name: "Wakad" },
+        { "@type": "City", name: "Hinjewadi" },
+        { "@type": "City", name: "Baner" },
+        { "@type": "City", name: "Kothrud" },
+        { "@type": "City", name: "Aundh" },
+        { "@type": "City", name: "Viman Nagar" },
+        { "@type": "City", name: "Kharadi" }
+      ],
+      priceRange: "₹₹",
       description:
-        "Professional painter near you in Pune offering interior painting, exterior painting, texture finishes, waterproofing and home renovation services with premium materials and experienced painters."
+        "Professional interior and exterior painting services in Pune including texture finish, waterproofing and complete house painting."
     }),
   }}
 />
 
     <ServicePageBanner
-            title="Professional Painting Services"
-            description="High-quality interior and exterior painting solutions tailored for your space."
+            title="Painter Near Me in Pune"
+            description="Trusted house painting services in Pune for interior, exterior, texture and waterproofing projects. Premium finish and on-time completion."
             primaryCta={{
               text: "Book Site Visit",
               href: "/contact",
@@ -145,14 +129,17 @@ export default function PainterNearMePune() {
 
       <div className="space-y-6">
         <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-          Painter Near Me in Pune
-        </h1>
+Painter Near Me in Pune – Professional House Painting Services</h1>
 
         <p className="text-lg leading-relaxed text-gray-300">
           Searching for reliable house painters in Pune? New Bombay Painting
-          provides professional interior painting, exterior painting, texture
+          provides professional{" "}<a href="/services/interior-painting" className="text-yellow-400 underline">
+Interior Painting Services
+</a>,{" "}<a href="/services/exterior-painting" className="text-yellow-400 underline">
+Exterior Painting Services
+</a>,{" "}texture
           finishes, waterproofing and complete home renovation services across
-          Mumbai with premium materials and skilled workmanship.
+          Pune with premium materials and skilled workmanship.
         </p>
       </div>
 
@@ -204,6 +191,9 @@ export default function PainterNearMePune() {
     completion. We focus on customer satisfaction, transparent pricing
     and professional execution for every project.
   </p>
+  <h3 className="text-yellow-400">You can also visit on these pages:</h3>
+ <p className="text-yellow-400"><a href="/painter-near-me/mumbai">Painter in Mumbai</a></p>
+<p className="text-yellow-400"><a href="/painter-near-me/navi-mumbai">Painter in Navi Mumbai</a></p>
 
 </div>
 

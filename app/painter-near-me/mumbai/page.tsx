@@ -4,29 +4,17 @@ import ServicePageBanner from "@/app/components/ServicePageBanner";
 
 export const metadata = {
   title:
-    "Painter Near Me in Mumbai | Professional House Painters in Mumbai",
+    "Painter Near Me in Mumbai | House Painting Services in Mumbai",
   description:
-    "Looking for a reliable painter near you in Mumbai? New Bombay Painting offers expert interior painting, exterior painting, texture finishes, waterproofing and home renovation services across Mumbai with premium materials, skilled workmanship and on-time delivery.",
-  keywords: [
-    "Painter near me in Mumbai",
-    "House painters in Mumbai",
-    "Interior painting Mumbai",
-    "Exterior painting Mumbai",
-    "Home painting contractor Mumbai",
-    "Wall painting services Mumbai",
-    "Texture painting Mumbai",
-    "Waterproofing services Mumbai",
-    "1BHK painting Mumbai",
-    "2BHK painting Mumbai"
-  ],
+    "Need a trusted painter near you in Mumbai? New Bombay Painting provides interior painting, exterior painting, texture finishes, waterproofing and 1BHK–3BHK home painting services with premium finish and transparent pricing.",
   alternates: {
     canonical: "https://newbombaypainting.in/painter-near-me/mumbai",
   },
   openGraph: {
     title:
-      "Painter Near Me in Mumbai | Professional House Painting Services",
+      "Painter Near Me in Mumbai | Trusted House Painters",
     description:
-      "Trusted painting contractors in Mumbai for interior, exterior, texture and renovation services. Premium finish and timely completion.",
+      "Professional house painters in Mumbai for interior, exterior and texture painting. Site visit, transparent pricing and premium finish.",
     url: "https://newbombaypainting.in/painter-near-me/mumbai",
     siteName: "New Bombay Painting",
     type: "website",
@@ -81,57 +69,44 @@ export const bedroomData = [
 export default function PainterNearMeMumbai() {
   return (
     <>
-    <script
+   <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Service",
-      "@id":
-        "https://newbombaypainting.in/painter-near-me/mumbai#service",
-      serviceType: "House Painting Services",
-      name: "Painter Near Me in Mumbai",
-      provider: {
-        "@type": "PaintingContractor",
-        name: "New Bombay Painting",
-        url: "https://newbombaypainting.in/",
-        telephone: [
-          "+919793167187",
-          "+919819584682",
-          "+919320837842",
-          "+918736963061"
-        ],
-        email: "newbombaypainting302@gmail.com",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress:
-            "D-231, Y.Rao Chavan NGR, Ekata Nagar, Link Road, Govandi, Mankhurd",
-          addressLocality: "Mumbai",
-          addressRegion: "MH",
-          postalCode: "400043",
-          addressCountry: "IN"
-        }
+      "@type": "LocalBusiness",
+      "@id": "https://newbombaypainting.in/#business",
+      name: "New Bombay Painting",
+      image: "https://newbombaypainting.in/images/logo.png",
+      url: "https://newbombaypainting.in/",
+      telephone: "+919819584682",
+      email: "newbombaypainting302@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "D-231, Y. Rao Chavan, Link Road, Ekta Nagar, Mankhurd",
+        addressLocality: "Mumbai",
+        addressRegion: "MH",
+        postalCode: "400043",
+        addressCountry: "IN"
       },
-      areaServed: {
-        "@type": "City",
-        name: "Mumbai"
-      },
+      areaServed: [
+        { "@type": "City", name: "Mumbai" },
+        { "@type": "City", name: "Navi Mumbai" },
+        { "@type": "City", name: "Pune" },
+        { "@type": "City", name: "Khandala" },
+        { "@type": "City", name: "Lonavala" }
+      ],
+      priceRange: "₹₹",
       description:
-        "Professional painter near you in Mumbai offering interior painting, exterior painting, texture finishes, waterproofing and complete home renovation services with premium materials and skilled workforce.",
-      availableChannel: {
-        "@type": "ServiceChannel",
-        serviceLocation: {
-          "@type": "City",
-          name: "Mumbai"
-        }
-      }
+        "Professional interior and exterior painting services in Mumbai including texture finish, waterproofing and complete house painting."
     }),
   }}
 />
 
 <ServicePageBanner
-        title="Professional Painting Services"
-        description="High-quality interior and exterior painting solutions tailored for your space."
+        title="Painter Near Me in Mumbai"
+        description="Trusted house painting services in Mumbai for interior, exterior, texture and waterproofing projects. Premium finish and on-time completion."
         primaryCta={{
           text: "Book Site Visit",
           href: "/contact",
@@ -157,12 +132,13 @@ export default function PainterNearMeMumbai() {
           Painter Near Me in Mumbai
         </h1>
 
-        <p className="text-lg leading-relaxed text-gray-300">
-          Searching for reliable house painters in Mumbai? New Bombay Painting
-          provides professional interior painting, exterior painting, texture
-          finishes, waterproofing and complete home renovation services across
-          Mumbai with premium materials and skilled workmanship.
-        </p>
+       <p className="text-lg leading-relaxed text-gray-300">
+Looking for a reliable painter near you in Mumbai? New Bombay Painting offers professional{" "}<a href="/services/interior-painting" className="text-yellow-400 underline">
+Interior Painting Services
+</a>,{" "}<a href="/services/exterior-painting" className="text-yellow-400 underline">
+Exterior Painting Services
+</a>,{" "}texture finishes, waterproofing and complete house painting solutions for flats, villas and commercial properties across Mumbai and nearby areas.
+</p>
       </div>
 
       <div className="space-y-6 text-gray-300 leading-relaxed">

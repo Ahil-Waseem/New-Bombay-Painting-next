@@ -4,28 +4,17 @@ import ServicePageBanner from "@/app/components/ServicePageBanner";
 
 export const metadata = {
   title:
-    "Painter Near Me in Navi Mumbai | House Painting Services in Navi Mumbai",
+    "Painter Near Me in Navi Mumbai | House Painting Services",
   description:
-    "Looking for a reliable painter near you in Navi Mumbai? New Bombay Painting provides expert interior painting, exterior painting, texture finishes, waterproofing and home renovation services with premium materials and timely completion.",
-  keywords: [
-    "Painter near me in Navi Mumbai",
-    "House painters Navi Mumbai",
-    "Interior painting Navi Mumbai",
-    "Exterior painting Navi Mumbai",
-    "Wall painting services Navi Mumbai",
-    "Home painting contractor Navi Mumbai",
-    "Texture painting Navi Mumbai",
-    "1BHK painting Navi Mumbai",
-    "2BHK painting Navi Mumbai"
-  ],
+    "Need a trusted painter near you in Navi Mumbai? New Bombay Painting offers interior painting, exterior painting, texture finishes, waterproofing and 1BHK–3BHK house painting services with premium finish and transparent pricing.",
   alternates: {
     canonical: "https://newbombaypainting.in/painter-near-me/navi-mumbai",
   },
   openGraph: {
     title:
-      "Painter Near Me in Navi Mumbai | Professional Painting Services",
+      "Painter Near Me in Navi Mumbai | Trusted House Painters",
     description:
-      "Trusted painting contractors in Navi Mumbai for interior, exterior and renovation projects with premium finish and skilled workmanship.",
+      "Professional painting contractors in Navi Mumbai for flats, villas and commercial spaces. Site visit and transparent pricing available.",
     url: "https://newbombaypainting.in/painter-near-me/navi-mumbai",
     siteName: "New Bombay Painting",
     type: "website",
@@ -79,50 +68,44 @@ export const bedroomData = [
 export default function PainterNearMeNaviMumbai() {
   return (
         <>
-        <script
+       <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Service",
-      "@id":
-        "https://newbombaypainting.in/painter-near-me/navi-mumbai#service",
-      serviceType: "House Painting Services",
-      name: "Painter Near Me in Navi Mumbai",
-      provider: {
-        "@type": "PaintingContractor",
-        name: "New Bombay Painting",
-        url: "https://newbombaypainting.in/",
-        telephone: [
-          "+919793167187",
-          "+919819584682",
-          "+919320837842",
-          "+918736963061"
-        ],
-        email: "newbombaypainting302@gmail.com",
-        address: {
-          "@type": "PostalAddress",
-          streetAddress:
-            "D-231, Y.Rao Chavan NGR, Ekata Nagar, Link Road, Govandi, Mankhurd",
-          addressLocality: "Mumbai",
-          addressRegion: "MH",
-          postalCode: "400043",
-          addressCountry: "IN"
-        }
+      "@type": "LocalBusiness",
+      "@id": "https://newbombaypainting.in/#business",
+      name: "New Bombay Painting",
+      url: "https://newbombaypainting.in/",
+      telephone: "+919819584682",
+      email: "newbombaypainting302@gmail.com",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "D-231, Y. Rao Chavan, Link Road, Ekta Nagar, Mankhurd",
+        addressLocality: "Mumbai",
+        addressRegion: "MH",
+        postalCode: "400043",
+        addressCountry: "IN"
       },
-      areaServed: {
-        "@type": "City",
-        name: "Navi Mumbai"
-      },
+      areaServed: [
+        { "@type": "City", name: "Navi Mumbai" },
+        { "@type": "City", name: "Vashi" },
+        { "@type": "City", name: "Nerul" },
+        { "@type": "City", name: "Kharghar" },
+        { "@type": "City", name: "Panvel" },
+        { "@type": "City", name: "Belapur" }
+      ],
+      priceRange: "₹₹",
       description:
-        "Professional painter near you in Navi Mumbai offering interior painting, exterior painting, texture finishes, waterproofing and home renovation services with premium materials and skilled workforce."
+        "Professional interior and exterior painting services in Navi Mumbai including texture finish, waterproofing and complete house painting."
     }),
   }}
 />
 
     <ServicePageBanner
-            title="Professional Painting Services"
-            description="High-quality interior and exterior painting solutions tailored for your space."
+            title="Painter Near Me in Navi Mumbai"
+            description="Trusted house painting services in Navi-Mumbai for interior, exterior, texture and waterproofing projects. Premium finish and on-time completion."
             primaryCta={{
               text: "Book Site Visit",
               href: "/contact",
@@ -143,15 +126,15 @@ export default function PainterNearMeNaviMumbai() {
 
       <div className="space-y-6">
         <h1 className="text-3xl md:text-4xl font-semibold text-yellow-400">
-          Painter Near Me in Navi-Mumbai
-        </h1>
+Painter Near Me in Navi Mumbai – Professional House Painting Services</h1>
 
         <p className="text-lg leading-relaxed text-gray-300">
-          Searching for reliable house painters in Navi-Mumbai? New Bombay Painting
-          provides professional interior painting, exterior painting, texture
-          finishes, waterproofing and complete home renovation services across
-          Mumbai with premium materials and skilled workmanship.
-        </p>
+Looking for a reliable painter near you in Navi Mumbai? New Bombay Painting provides professional{" "}<a href="/services/interior-painting" className="text-yellow-400 underline">
+Interior Painting Services
+</a>,{" "}<a href="/services/exterior-painting" className="text-yellow-400 underline">
+Exterior Painting Services
+</a>,{" "}texture finishes and waterproofing services for flats, villas and commercial properties across Vashi, Nerul, Kharghar, Panvel, Belapur and nearby areas.
+</p>
       </div>
 
       <div className="space-y-6 text-gray-300 leading-relaxed">
