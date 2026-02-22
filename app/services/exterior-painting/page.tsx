@@ -135,7 +135,7 @@ export default function ExteriorPaintingPage() {
         mobileBgImage="/images/services/mob-service1.webp" 
         sideVideo="/images/services/house-dancing1.mp4"
       />
-      <AutoScrollGallerySadeCard items={galleryData} speed={30} />;
+      <AutoScrollGallerySadeCard items={galleryData} speed={30} />
 
       {/* rest of page */}
       <section className="w-full bg-black text-white py-20">
