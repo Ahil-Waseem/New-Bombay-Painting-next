@@ -8,22 +8,25 @@ const slides = [
   {
     image: "/images/home/hero/home-banner4.webp",
     mobileImage: "/images/home/hero/home-mob-ban3.webp", 
-    heading: "Premium House Painting Services",
-    subheading: "Flawless finish, on-time completion & post-paint cleanup",
+    heading: "Modern Wall Painting Design Services in Mumbai",
+    subheading: "Explore premium wall paint design ideas with flawless finish, on-time completion & post-paint cleanup.",
+    alt: "Modern wall painting design ideas for homes in Mumbai",
     button: "Estimate Painting Cost",
   },
   {
     image: "/images/home/hero/home-banner1.webp",
     mobileImage: "/images/home/hero/home-mob-ban1.webp", 
-    heading: "Villa Painting Services You Can Trust",
-    subheading: "Luxury, long-lasting paint finishes for your villa",
+    heading: "Luxury Villa Wall Texture Design Experts",
+    subheading: "Creative wall painting ideas and long-lasting texture finishes for villas in Mumbai.",
+    alt: "Luxury villa wall texture design services in Mumbai",
     button: "Book Site Visit",
   },
   {
     image: "/images/home/hero/home-banner3.webp",
     mobileImage: "/images/home/hero/home-mob-ban2.webp", 
-    heading: "Interior & Exterior Painting Experts",
-    subheading: "Serving Mumbai & Navi Mumbai with quality workmanship",
+    heading: "Interior & Exterior Wall Painting Design Specialists",
+    subheading: "Professional wall texture design and modern paint ideas for homes in Mumbai & Navi Mumbai.",
+    alt: "Interior and exterior wall painting design services in Mumbai", 
     button: "Get Free Consultation",
   },
 ];
@@ -131,7 +134,7 @@ const cleanPhone = phone.replace(/\D/g, "");
 <div className="hidden sm:block relative w-full h-full">
   <Image
     src={slide.image}
-    alt={slide.heading}
+    alt={slide.alt}
     fill
     priority={index === 0}
     draggable={false}
@@ -160,9 +163,16 @@ const cleanPhone = phone.replace(/\D/g, "");
 
           {/* LEFT TEXT */}
           <div className="text-white flex flex-col justify-center pt-24 lg:pt-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-2xl">
-              {slides[current].heading}
-            </h1>
+          {current === 0 ? (
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-extrabold leading-tight max-w-2xl">
+                Wall Painting Design & Wall Texture Experts in Mumbai – Modern Paint Ideas
+              </h1>
+            ) : (
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight max-w-2xl">
+                {slides[current].heading}
+              </h2>
+            )}
+
 
             <p className="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl leading-relaxed">
               {slides[current].subheading}

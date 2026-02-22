@@ -2,13 +2,29 @@ import Image from "next/image";
 import ServiceContactSection from "../components/ServiceContactSection";
 import WhyChooseUsAnimated from "../components/WhyChooseUsAnimated";
 import ServicePageBanner from "../components/ServicePageBanner";
+import Link from "next/link";
 
+export const metadata = {
+  title:
+    "Professional Painting Services in Mumbai & Navi Mumbai | Interior & Exterior Experts",
+
+  description:
+    "New Bombay Painting offers reliable painting services in Mumbai & Navi Mumbai including interior painting, exterior painting, wall texture design and waterproofing solutions. Book a free site visit today.",
+
+  keywords: [
+    "painting services in Mumbai",
+    "interior painting Mumbai",
+    "exterior painting Navi Mumbai",
+    "wall texture design Mumbai",
+    "house painting contractor Mumbai"
+  ],
+};
 export default function ServicesPage() {
   return (
     <>
     <ServicePageBanner
-                        title="Professional Painting Services"
-                        description="High-quality interior and exterior painting solutions tailored for your space."
+                        title="Professional Painting Services in Mumbai & Navi Mumbai"
+                        description="Trusted interior painting, exterior painting and wall texture design services in Mumbai & Navi Mumbai with smooth finish, durable quality and professional workmanship."
                         primaryCta={{
                           text: "Book Site Visit",
                           href: "/contact",
@@ -19,7 +35,7 @@ export default function ServicesPage() {
                         }}
                         bgImage="/images/services/service2.webp"
                         // sideImage="/images/services/"
-                        mobileBgImage="/images/services/mob-service10.webp" 
+                        mobileBgImage="/images/services/mob-service9.webp" 
                         sideVideo="/images/services/house-dancing1.mp4"
                       />
     <main className="w-full">
@@ -38,14 +54,21 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-              Painting <span className="text-yellow-400">Services</span>
-            </h1>
+  Professional <span className="text-yellow-400">Painting Services in Mumbai</span>
+</h1>
 
             <p className="text-gray-300 max-w-lg">
-              Interior, exterior, residential and commercial painting services
-              with neat finishing, durable quality, and trusted workmanship by
-              New Bombay Painting.
-            </p>
+  We provide interior painting, exterior painting, residential and
+  commercial painting services across Mumbai and Navi Mumbai. As part of our{" "}
+  <Link 
+    href="/" 
+    className="text-yellow-400 underline hover:text-yellow-300"
+  >
+    wall painting design and texture expertise
+  </Link>,{" "}
+  our experienced painters ensure neat finishing, durable coatings and
+  reliable workmanship for long-lasting results.
+</p>
 
             <div className="flex flex-wrap gap-4 pt-2">
               <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-300 transition">
@@ -59,7 +82,7 @@ export default function ServicesPage() {
             {/* Replace src later */}
             <Image
               src="/images/services/re-painting2.webp"
-              alt="Painting Services"
+              alt="Professional painting services in Mumbai and Navi Mumbai"
               fill
               className="object-cover"
               priority

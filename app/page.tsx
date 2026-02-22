@@ -13,17 +13,18 @@ import ResponsiveGuranteeImage from "./components/ResponsiveGuranteeImage";
 
 export const metadata = {
   title:
-    "New Bombay Painting | Interior & Exterior Painting Services in Mumbai & Navi Mumbai",
+    "Wall Painting Design & Texture Experts in Mumbai | New Bombay Painting",
+
   description:
-    "New Bombay Painting offers professional interior, exterior & texture painting services in Mumbai & Navi Mumbai. 100% satisfaction guarantee, premium quality finish & affordable pricing. Book your free site visit today.",
+    "Looking for modern wall painting design in Mumbai? Explore creative wall paint design ideas, wall painting ideas and expert wall texture design services. We also guide you with the latest Asian Paints colour chart. Book your free site visit today.",
+
   keywords: [
-    "painting services in Mumbai",
-    "interior painting Mumbai",
-    "exterior painting Navi Mumbai",
-    "texture painting services",
-    "house painting contractor Mumbai",
-    "painter near me in Mumbai",
-    "painter near me in Navi-Mumbai",
+    "wall painting design",
+    "wall paint design ideas",
+    "wall painting ideas",
+    "wall texture design",
+    "asian paints colour chart",
+    "wall painting design in Mumbai",
   ],
 };
 
