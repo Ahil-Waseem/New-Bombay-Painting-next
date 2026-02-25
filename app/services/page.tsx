@@ -71,9 +71,12 @@ export default function ServicesPage() {
 </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
+              <Link 
+    href="/contact" >
               <button className="bg-yellow-400 text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-300 transition">
                 Contact Us
               </button>
+              </Link>
             </div>
           </div>
 
