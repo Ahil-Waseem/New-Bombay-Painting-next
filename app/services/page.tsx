@@ -3,28 +3,119 @@ import ServiceContactSection from "../components/ServiceContactSection";
 import WhyChooseUsAnimated from "../components/WhyChooseUsAnimated";
 import ServicePageBanner from "../components/ServicePageBanner";
 import Link from "next/link";
+import ServicePageComponent from "../components/ServicePageComponent";
 
 export const metadata = {
   title:
-    "Professional Painting Services in Mumbai & Navi Mumbai | Interior & Exterior Experts",
+    "Best House Painting Services in Mumbai, Navi Mumbai & Pune | New Bombay Painting",
 
   description:
-    "New Bombay Painting offers reliable painting services in Mumbai & Navi Mumbai including interior painting, exterior painting, wall texture design and waterproofing solutions. Book a free site visit today.",
+    "Looking for professional house painting services in Mumbai, Navi Mumbai or Pune? New Bombay Painting offers interior painting, exterior painting, wall texture design, waterproofing and complete home repainting solutions. Book a free site visit today.",
 
   keywords: [
-    "painting services in Mumbai",
-    "interior painting Mumbai",
-    "exterior painting Navi Mumbai",
-    "wall texture design Mumbai",
-    "house painting contractor Mumbai"
+    "house painting services in Mumbai",
+    "painting contractor Mumbai",
+    "interior painting Navi Mumbai",
+    "exterior painting Pune",
+    "wall painting design Mumbai",
+    "home painting cost Mumbai"
   ],
 };
 export default function ServicesPage() {
   return (
     <>
+    <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://newbombaypainting.in/#business",
+        "name": "New Bombay Painting",
+        "url": "https://newbombaypainting.in/",
+        "logo": "https://newbombaypainting.in/logo.png",
+        "image": "https://newbombaypainting.in/images/services/service2.webp",
+        "telephone": "+919793167187",
+        "email": "newbombaypainting302@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        "priceRange": "₹₹"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://newbombaypainting.in/services#painting",
+        "serviceType": "House Painting Services",
+        "name": "House Painting Services in Mumbai, Navi Mumbai & Pune",
+        "provider": {
+          "@type": "PaintingContractor",
+          "name": "New Bombay Painting",
+          "url": "https://newbombaypainting.in/"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Mumbai" },
+          { "@type": "City", "name": "Navi Mumbai" },
+          { "@type": "City", "name": "Pune" }
+        ],
+        "description":
+          "Professional interior painting, exterior painting, wall texture design, waterproofing and complete home repainting services for flats, villas and commercial spaces in Mumbai, Navi Mumbai and Pune."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the cost of house painting in Mumbai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "House painting cost in Mumbai depends on property size and paint quality. A 2BHK flat typically ranges between ₹25,000 to ₹45,000."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which paint is best for Mumbai weather?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Weather-resistant exterior paints such as Asian Paints Apex, Nerolac Excel and Dulux Weathershield are suitable for Mumbai's humid climate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does interior painting take for a 3BHK flat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Interior painting for a 3BHK flat usually takes 4 to 6 days depending on surface preparation and design requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide waterproofing services in Pune?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes, we provide terrace, bathroom and exterior wall waterproofing services in Pune using reliable long-lasting systems."
+            }
+          }
+        ]
+      }
+    ])
+  }}
+/>
     <ServicePageBanner
-                        title="Professional Painting Services in Mumbai & Navi Mumbai"
-                        description="Trusted interior painting, exterior painting and wall texture design services in Mumbai & Navi Mumbai with smooth finish, durable quality and professional workmanship."
+                        title="Professional Painting Services in Mumbai, Navi Mumbai & Pune"
+                        description="Trusted interior painting, exterior painting and wall texture design services in Mumbai, Navi Mumbai and Pune with smooth finish, durable quality and professional workmanship."
                         primaryCta={{
                           text: "Book Site Visit",
                           href: "/contact",
@@ -54,7 +145,7 @@ export default function ServicesPage() {
             </p>
 
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-  Professional <span className="text-yellow-400">Painting Services in Mumbai</span>
+  Professional <span className="text-yellow-400">Painting Services in Mumbai, Navi Mumbai & Pune</span>
 </h1>
 
             <p className="text-gray-300 max-w-lg">
@@ -98,6 +189,7 @@ export default function ServicesPage() {
       </section>
 <ServiceContactSection/>
 <WhyChooseUsAnimated/>
+<ServicePageComponent/>
       {/* ===== Services Content Section ===== */}
     <section
   id="painting-services"
@@ -105,13 +197,14 @@ export default function ServicesPage() {
 >
   <header className="space-y-4">
     <h2 className="text-3xl font-semibold text-gray-900">
-      Our Painting Services
-    </h2>
+Our Painting Services in Mumbai, Navi Mumbai & Pune    </h2>
     <p className="text-gray-700 max-w-3xl">
-      At New Bombay Painting, we offer complete painting and surface protection
-      solutions for homes and commercial spaces. Our work is driven by practical
-      experience, honest guidance, and a strong focus on durability, finish, and
-      long-term satisfaction.
+     At {" "}<a
+    href="https://newbombaypainting.in/"
+    className="text-yellow-400 underline"
+  >
+    <strong>New Bombay Painting</strong>
+  </a>, we provide professional painting services in Mumbai, Navi Mumbai and Pune, offering complete interior and exterior painting solutions for residential and commercial properties. With years of practical experience, we focus on proper surface preparation, premium materials and long-lasting finishes suited to local weather conditions.
     </p>
   </header>
 
@@ -119,94 +212,75 @@ export default function ServicesPage() {
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Interior Painting Services
-      </h3>
+<a
+    href="https://newbombaypainting.in/services/interior-painting"
+    className="text-yellow-400 underline"
+  >
+    <strong>Interior Painting Services</strong>
+  </a>{" "}in Mumbai & Pune      </h3>
       <p>
-        Refresh your interiors with smooth, elegant finishes that enhance the
-        look and comfort of your home. We handle walls, ceilings, doors, and
-        furniture with proper surface preparation, clean execution, and careful
-        detailing so the finish looks good and lasts longer.
+       Our interior painting services are designed to transform flats, apartments, villas and offices with smooth, elegant finishes. We handle walls, ceilings, doors and furniture using proper sanding, crack filling and priming techniques. Whether you need 1BHK, 2BHK, 3BHK or 4BHK painting in Mumbai or Pune, our expert painters ensure clean execution and durable results.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Exterior Painting Services
-      </h3>
+<a
+    href="https://newbombaypainting.in/services/exterior-painting"
+    className="text-yellow-400 underline"
+  >
+    <strong>Exterior Painting </strong>
+  </a>{" "}Contractor in Navi Mumbai & Mumbai      </h3>
       <p>
-        Exterior painting is not just about appearance—it’s also about
-        protection. Our team helps you choose the right exterior paints and
-        finishes that can withstand weather conditions while improving the
-        overall appeal of your building.
+        Exterior painting is not only about appearance but also protection from heat, rain and moisture. As a trusted exterior painting contractor in Mumbai and Navi Mumbai, we use high-quality exterior paints that withstand weather conditions and enhance the overall building appearance.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Residential Painting
-      </h3>
+Residential House Painting (Flats & Villas)      </h3>
       <p>
-        We provide complete residential painting solutions for flats, apartments,
-        houses, and bungalows. Whether it’s a fresh paint job or repainting, our
-        focus remains on neat work, minimal disturbance, and a finish that feels
-        like home.
+        We provide complete house painting services for flats, apartments, bungalows and villas across Mumbai, Navi Mumbai and Pune. From fresh painting to complete repainting, our team ensures minimal disturbance, proper coverage and a clean handover.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Commercial Painting
-      </h3>
+Commercial Painting Services      </h3>
       <p>
-        From offices and shops to showrooms and hospitality spaces, we handle
-        commercial painting projects with proper planning and time discipline.
-        Our team understands the importance of clean execution and timely
-        completion in working environments.
+       Our commercial painting services cover offices, shops, showrooms, restaurants and hospitality spaces. We understand the importance of timelines and work discipline in commercial environments, ensuring professional finishing with minimal downtime.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Wall Texture & Decorative Painting
-      </h3>
+Wall Texture & Decorative Painting Design      </h3>
       <p>
-        Add character to your walls with modern textures, stencil designs, and
-        decorative finishes. We help you choose styles that suit your space,
-        lighting, and usage—so the result looks stylish without feeling overdone.
+        Looking for modern wall painting designs or unique wall paint colour combinations? We offer designer wall textures, stencil patterns and decorative finishes including premium texture and feature wall concepts. Our team helps you choose styles that match your interior lighting and layout.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Waterproofing Services
-      </h3>
+Waterproofing Services for Homes & Buildings      </h3>
       <p>
-        Our waterproofing services protect your home from dampness, leakage, and
-        moisture-related damage. From terraces and bathrooms to exterior walls
-        and basements, we use proven methods to improve durability and prevent
-        recurring issues.
+       Our waterproofing services in Mumbai and Pune protect your property from leakage, dampness and moisture damage. We provide terrace waterproofing, bathroom waterproofing and exterior wall waterproofing using reliable materials to ensure long-term durability.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Wood Painting & Polishing
-      </h3>
+Wood Painting & Polishing Services      </h3>
       <p>
-        Wooden doors, windows, furniture, and cabinets need special care. Our
-        wood painting and polishing services enhance natural beauty while
-        protecting surfaces from wear, insects, and ageing.
+        Wooden doors, windows, cabinets and furniture require special treatment. Our wood painting and polishing services enhance the natural look of wood while protecting it from wear, termites and environmental damage.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-gray-900">
-        Metal Painting Services
-      </h3>
+Metal Painting Services      </h3>
       <p>
-        We offer metal painting for grills, railings, gates, and metal fixtures.
-        Proper priming and coating not only improve appearance but also help
-        protect metal surfaces from rust and weather damage.
+       We provide metal painting services for grills, gates, railings and structural fixtures. Proper anti-rust priming and coating ensures protection from corrosion and long-term performance.
       </p>
     </div>
 
@@ -215,13 +289,71 @@ export default function ServicesPage() {
         Surface Preparation & Quality Control
       </h3>
       <p>
-        A good paint finish starts with the right preparation. Our team takes
-        care of cleaning, crack filling, sanding, and priming before painting.
-        Every project is supervised to ensure quality, safety, and a clean final
-        handover.
+        A durable paint finish always begins with correct preparation. Our process includes cleaning, crack repair, sanding, putty work and priming before final coats are applied. Every project in Mumbai, Navi Mumbai and Pune is supervised to maintain safety standards, quality workmanship and a neat final finish.
       </p>
     </div>
 
+  </div>
+</section>
+<section className="w-full bg-white text-black py-20">
+  <div className="max-w-5xl mx-auto px-6">
+
+    <h2 className="text-3xl font-semibold text-yellow-400 mb-10">
+      Frequently Asked Questions – Exterior Painting
+    </h2>
+
+    <div className="space-y-6">
+
+      <details className="border border-gray-700 rounded-lg p-5">
+        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+What is the best wall paint colour combination for living rooms?</summary>
+        <p className="mt-4 text-black-200 leading-relaxed">
+                  The best wall paint colour combination for living rooms depends on space size and lighting. Popular choices include beige and white, grey and pastel blue, or cream and brown. Our experts help homeowners in Mumbai and Pune select combinations that create a modern and elegant look.
+
+        </p>
+      </details>
+
+      <details className="border border-gray-700 rounded-lg p-5">
+        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+        Which wall painting designs are trending for hall areas?
+        </summary>
+        <p className="mt-4 text-black-200 leading-relaxed">
+                 Modern wall painting designs for hall areas include geometric patterns, two colour wall combinations, textured finishes and accent walls. These designs enhance visual appeal without overwhelming the space.
+
+        </p>
+      </details>
+
+      <details className="border border-gray-700 rounded-lg p-5">
+        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+        What is Royal Play design in wall painting?
+        </summary>
+        <p className="mt-4 text-black-200 leading-relaxed">
+                 Royal Play design is a premium decorative wall finish that adds texture and depth to interiors. It is ideal for feature walls in living rooms and bedrooms and gives a luxury appearance.
+
+        </p>
+      </details>
+
+      <details className="border border-gray-700 rounded-lg p-5">
+        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+        What is the average home painting cost in Mumbai?
+        </summary>
+        <p className="mt-4 text-black-200 leading-relaxed">
+                  The average home painting cost in Mumbai depends on property size and paint quality. For a 2BHK flat, it generally ranges between ₹25,000 to ₹45,000.
+
+        </p>
+      </details>
+
+      <details className="border border-gray-700 rounded-lg p-5">
+        <summary className="cursor-pointer text-yellow-400 font-medium text-lg">
+        How long does interior painting take for a 3BHK flat?
+        </summary>
+        <p className="mt-4 text-black-200 leading-relaxed">
+                 Interior painting for a 3BHK flat usually takes 4–6 days depending on surface condition, preparation work and design requirements.
+
+        </p>
+      </details>
+
+    </div>
   </div>
 </section>
 
